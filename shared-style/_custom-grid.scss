@@ -1,0 +1,42 @@
+@import "./custom-bootstrap/scss/functions";
+@import "./custom-bootstrap/scss/variables";
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 640px,
+        md: 960px,
+        lg: 1140px,
+        xl: 2000px
+);
+
+$container-max-widths: (
+        sm: 960px,
+        md: 1140px,
+        lg: 1140px,
+        xl: 1140px
+);
+
+@import "./custom-bootstrap/scss/mixins";
+
+@import "./custom-bootstrap/scss/grid";
+@import "./custom-bootstrap/scss/buttons";
+@import "./custom-bootstrap/scss/button-group";
+@import "./custom-bootstrap/scss/utilities/display";
+@import "./custom-bootstrap/scss/utilities/flex";
+@import "./custom-bootstrap/scss/utilities/spacing";
+@import "./custom-bootstrap/scss/utilities/align";
+@import "./custom-bootstrap/scss/utilities/borders";
+@import "./custom-bootstrap/scss/utilities/position";
+
+//end over ride
+@import "breakpoint-shared";
+
+.container-muk-narrow{
+  @extend .container-muk;
+  @include ipad-up(){
+    max-width: 100%!important;
+  }
+  @include tablet-and-up(){
+    max-width: 1140px!important;
+  }
+}
