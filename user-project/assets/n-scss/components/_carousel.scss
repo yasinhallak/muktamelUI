@@ -1,0 +1,14 @@
+.main-slider {
+  .hooper{
+    @include for-phone-only{
+      height: 350px !important;
+    }
+    @include for-tablet-portrait-up{
+      height: 550px !important;
+    }
+    @include for-desktop-up{
+      height: 700px !important;
+    }
+  }
+
+}

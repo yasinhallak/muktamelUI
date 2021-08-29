@@ -1,0 +1,323 @@
+.company-registration {
+  .modal .modal-body .form-group label {
+    font-weight: normal !important;
+    font-size: 14px;
+  }
+
+  .register-button {
+    background-color: #0089fe;
+    width: 200px;
+    height: 50px;
+    line-height: 34px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #FFFFFF;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  .agencies-hooper {
+    .hooper-slide {
+      margin-left: 15px
+    }
+  }
+
+
+  ::v-deep {
+
+    .hooper {
+      .hooper-next, .hooper-prev {
+        outline: none;
+        padding-top: 0;
+      }
+
+      .hooper-indicator {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+
+      .hooper-pagination {
+        @media (max-width: 767px) {
+          &::before {
+            display: none;
+          }
+        }
+
+        &::before {
+          content: "\f030";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 700;
+          margin: 0 5px;
+        }
+      }
+    }
+
+    .custom-file-label::after {
+      content: 'صورة السجل التجاري' !important;
+      background-color: #F8F8F8;
+    }
+  }
+
+
+  .custom-border {
+    border: 1px solid #0089FE;
+    border-radius: 15px;
+  }
+
+  .custom-bg-input {
+    background: #E8E8E8;
+    border-radius: 0 0 15px 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .file-select > .select-button {
+    padding: 1rem;
+
+    color: white;
+    background-color: #2EA169;
+
+    border-radius: .3rem;
+
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .file-select > input[type="file"] {
+    display: none;
+  }
+
+
+  ._modal_style_1 {
+    width: 320px;
+
+    ._modal_header {
+      ._modal_title {
+        flex: 0.9;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      button {
+        flex: 0.1
+      }
+    }
+
+    ._modal_contain {
+      ._text {
+        font-size: 12px;
+        color: black;
+        padding: 0 20px;
+      }
+    }
+
+    ._modal_footer {
+      display: flex;
+      justify-content: space-evenly;
+
+      button {
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75px;
+        height: 25px;
+      }
+    }
+  }
+
+
+  .text-title {
+    padding: 0 !important;
+    margin: 0 !important;
+    @media (min-width: 960px) {
+      padding-top: 53px !important;
+    }
+    @media (max-width: 959px) {
+      margin-top: -22px !important;
+    }
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 124px;
+    letter-spacing: 0;
+    text-shadow: 0px 0px 10px #000000BF;
+  }
+
+  .text-sub-title {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: -21px !important;
+    @media (max-width: 959px) {
+      margin-top: -26px !important;
+    }
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 43px;
+    letter-spacing: 0;
+  }
+
+  .text-caption {
+    font-size: 20px;
+    line-height: 38px;
+    letter-spacing: 0;
+    margin-bottom: 14px
+  }
+
+  .cover-1 {
+    padding-top: 56px;
+    @media (max-width: 959px) {
+      padding-top: 1px
+    }
+    @media (max-width: 359px) {
+      padding: 0;
+      p {
+        font-size: 16px
+      }
+    }
+  }
+
+  .img-style {
+    @media (max-width: 959px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      margin-top: 32px;
+      @media (min-width: 960px) {
+        margin-right: 4.7%;
+      }
+      @media (max-width: 959px) {
+        width: 340px;
+        height: 215px;
+        margin-top: -30px;
+      }
+      @media (max-width: 360px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .join {
+    @media (max-width: 959px) {
+      padding-top: 11px;
+      padding-bottom: 11px;
+    }
+  }
+
+  .modal-content {
+    .modal-header {
+      padding-top: 9px;
+      padding-bottom: 7px;
+    }
+    #exampleModalLongTitle{font-size:14px;line-height:27px}
+    .custom-border{margin:9px !important;}
+    .custom-file-label::after{
+      border-radius: 0.25rem 0 0 .25rem !important;
+    }
+    .form-col{
+      padding-top:7px;
+      padding-bottom:7px;
+    }
+    .form-control{
+      color:#707070;
+    }
+    .form-group:not(.telephone-component,.f-2) {
+      margin: 13px 0 !important;
+       label{
+        margin-bottom:2px !important;
+       }
+      input,select {
+        height: 33px !important;
+        max-height: 33px !important;
+        min-height: 33px !important;
+        font-size: 14px !important;
+        color:#707070;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .modal button.close{
+    opacity: 1;
+    padding:10px
+  }
+  @media (min-width: 960px) {
+    .modal-dialog {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media (max-width: 959px) {
+    .modal-dialog {
+      width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media (max-width: 359px) {
+    .modal-dialog {
+      width: 310px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .text-black.m-0{
+    margin-bottom:1px !important;
+  }
+  #button{
+    @media (max-width: 959px) {
+      width:310px !important;
+    }
+    background:#0089FE !important;
+    width:460px !important;
+    height: 40px;
+    box-shadow: unset;
+    border-radius: 3px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    font-family: "Droid Arabic Kufi", "Open Sans", Arial, sans-serif;
+  }
+
+
+  #details{
+    max-width: 462px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 959px) {
+      margin-inline-start: 4px;
+    }
+  }
+
+  select{padding-top: 3px;}
+
+  @media (max-width: 959px) {
+      ::v-deep .telephone-component{
+     max-width: 312px !important;
+    }
+   ::v-deep{
+     select,input{
+       width: 312px;
+       height: 30px;
+       margin-right:auto;
+     }
+   }
+    #firstName,#lastName{
+      width: 152px;
+    }
+  }
+
+}

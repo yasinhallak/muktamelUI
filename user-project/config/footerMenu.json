@@ -1,0 +1,93 @@
+{
+  "menu": [
+    {
+      "id": 2,
+      "title": "عقارات للبيع",
+      "subMenus": [
+        {
+          "title":" عقارات للبيع في ",
+          "link": "/real-estates?searchQuery={\"dealType\":5,\"addressId\":"
+        },
+        {
+          "title":"أراضي للبيع في ",
+          "link": "/real-estates?searchQuery={\"dealType\":5,\"residentialRealstateType\":[11],\"addressId\":"
+        },
+        {
+          "title":"شقق للبيع في ",
+          "link": "/real-estates?searchQuery={\"dealType\":5,\"residentialRealstateType\":[7],\"addressId\":"
+        },
+        {
+          "title":"فلل للبيع في ",
+          "link": "/real-estates?searchQuery={\"dealType\":5,\"residentialRealstateType\":[1],\"addressId\":"
+        },
+        {
+          "title":"محلات للبيع في ",
+          "link": "/real-estates?searchQuery={\"dealType\":5,\"commertialRealstateType\":[14],\"addressId\":"
+        }
+      ],
+      "ml": 16
+    },
+    {
+      "id": 1,
+      "title": "عقارات للايجار",
+      "subMenus": [
+        {
+          "title":"عقارات للايجار في  ",
+          "link": "/real-estates?searchQuery={\"dealType\":6,\"addressId\":"
+        },
+        {
+          "title":"شقق للايجار في ",
+          "link": "/real-estates?searchQuery={\"dealType\":6,\"residentialRealstateType\":[7],\"addressId\":"
+        },
+        {
+          "title":"محلات للايجار في ",
+          "link": "/real-estates?searchQuery={\"dealType\":6,\"commertialRealstateType\":[14],\"addressId\":"
+        },
+        {
+          "title":"مستودعات للايجار في ",
+          "link": "/real-estates?searchQuery={\"dealType\":6,\"commertialRealstateType\":[16],\"addressId\":"
+        },
+        {
+          "title":"فلل للايجار في ",
+          "link": "/real-estates?searchQuery={\"dealType\":6,\"residentialRealstateType\":[1],\"addressId\":"
+        },
+        {
+          "title":"بيوت للايجار في ",
+          "link": "/real-estates?searchQuery={\"dealType\":6,\"residentialRealstateType\":[3],\"addressId\":"
+        }
+      ],
+      "ml": 11
+    },
+    {
+      "id": 3,
+      "title": "استراحات",
+      "subMenus": [
+        {
+          "title":"استراحات للإيجار في",
+          "link": ""
+        },
+        {
+          "title":"شاليهات للإيجار في",
+          "link": ""
+        },
+        {
+          "title":"مخيمات للإيجار في",
+          "link": ""
+        }
+      ],
+      "ml": 25
+    },
+    {
+      "id": 4,
+      "title": "مشاريع",
+      "subMenus": [
+        {
+          "title":"مشاريع في ",
+          "link": "/projects?searchQuery={\"addressId\":"
+        }
+
+      ],
+      "ml": 30
+    }
+  ]
+}

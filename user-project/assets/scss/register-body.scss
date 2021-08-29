@@ -1,0 +1,317 @@
+@import "./_common.scss";
+.register {
+  .active_ {
+    background: #0089fe !important;
+    color: #fff;
+  }
+  .register-body {
+    .info {
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .modal {
+
+  }
+  .input-validate-group {
+    display: inline-block;
+    width: 100%;
+  }
+}
+/* login style */
+#modal-email-register .modal-dialog{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 525px;
+  margin: 0 auto;
+  .modal-content {
+    border-radius: 0;
+    border: 0;
+
+    .modal-header {
+      border-bottom: 1px solid transparent !important;
+      padding: 0;
+    }
+
+    .color-black{
+      color: #000;
+    }
+
+    #content_email{
+      color: #0089fe!important;
+    }
+    button.close {
+      right: 0;
+      position: absolute;
+      background: red;
+      padding: 0;
+      margin: 0;
+      width: 27px;
+      height: 27px;
+      opacity: 1;
+      color: #fff;
+      font-size: 25px;
+      z-index: 1;
+      cursor: pointer;
+    }
+
+    .modal-footer {
+      border-top: 1px solid transparent !important;
+      margin: 0 auto 20px;
+      padding: 0;
+      button {
+        background: #0089fe;
+        border-radius: 0;
+        min-width: 130px;
+        min-height: 36px;
+        box-shadow: none;
+        font-family: inherit;
+      }
+    }
+  }
+}
+
+
+.register-body {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  .custom-shadow {
+    box-shadow: 0 -0.2rem 1rem 0.4rem rgba(0, 0, 0, 0.2);
+  }
+
+  .info {
+    text-align: center;
+    font-weight: 500;
+    min-height: 38rem;
+    .logo img {
+      width: 100px;
+      display: flex;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0.9rem auto;
+      color: $color_primary !important;
+    }
+    .about {
+      color: $color_dark;
+    }
+
+    .features {
+      h6 {
+        font-weight: bold;
+      }
+      img {
+        display: block;
+        margin: 2rem auto;
+        margin-bottom: 0.6rem;
+      }
+    }
+  }
+
+  .register {
+    .register-form {
+      min-height: 38rem;
+      .input-group-prepend {
+        height: 2.2rem;
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        padding: 0px 15px;
+        background-color: rgba(0, 0, 0, 0.05);
+        i {
+          cursor: pointer;
+          color: #0089fe;
+        }
+        .fa-eye:before {
+          content: "\f06e" !important;
+        }
+      }
+      .form-group {
+        .valid-name-message {
+          color: $color_scses;
+        }
+        .validation-message {
+          width: 100%;
+          height: 20px;
+        }
+        .validation-color {
+          color: red;
+        }
+        .sw_out {
+          .toggle {
+            position: absolute;
+            width: 100% !important;
+            border: none;
+            .toggle-group {
+              .btn-primary {
+                text-align: right;
+                padding-right: 6rem;
+                color: #fff;
+                background-color: $color_primary;
+                margin: 0;
+              }
+              .btn-danger {
+                right: -50%;
+                text-align: left;
+                padding-left: 7.5rem;
+              }
+            }
+          }
+        }
+      }
+      .email_ch_input {
+        input {
+          direction: ltr;
+        }
+      }
+      #show_hide_password {
+        height: 3.5rem;
+      }
+    }
+    a {
+      display: inline-block;
+      color: #1192ff !important;
+    }
+
+    input {
+      background-color: $color_input_pg;
+      border: 1px solid #ced4da;
+      max-height: 2.2rem;
+      width: 100%;
+    }
+
+    > div {
+      padding: 2rem 2rem 1.5rem 2rem;
+      font-weight: bold;
+
+      label {
+        font-weight: bold;
+        margin-bottom: 0.2rem;
+        color: $color_dark;
+
+        span::before {
+          content: " ";
+        }
+      }
+
+      .iti-flag {
+        background-repeat: unset;
+        direction: ltr;
+      }
+      .iti-flag.sa {
+        background-image: url("~@/assets/images/flag_of_ar.png");
+        background-size: 100%;
+      }
+
+      .intl-tel-input {
+        width: 100%;
+        .country-list {
+          left: 0;
+        }
+
+        input {
+          background-image: none;
+        }
+
+        .selected-dial-code {
+          direction: ltr;
+        }
+      }
+
+      .terms-submit {
+        p {
+          line-height: 1.2rem;
+          margin-bottom: 2.3rem;
+          color: $color_dark;
+        }
+
+        input {
+          font-weight: bold;
+          max-width: 12rem;
+          border: none;
+          color: $color_input_pg !important;
+          background-color: #f20d0d;
+        }
+
+        .reg_1:hover {
+          background-color: $color_danger;
+        }
+      }
+
+      p.btn {
+        border-radius: 0;
+        display: block;
+        margin-bottom: 0;
+        justify-content: center;
+        color: $color_dark;
+      }
+    }
+  }
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  background-image: none !important;
+}
+
+@media (max-width: 480px) {
+  .register {
+    .register-body .info h1 {
+      line-height: 32px;
+      margin: 20px;
+    }
+    .sw_out {
+      width: 100%;
+    }
+    .features p {
+      line-height: 21px;
+    }
+  }
+  .modal.show .modal-dialog{
+    width: 95%;
+    min-width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti-flag {
+    background-image: url("~@/assets/images/flags@2x.png");
+  }
+}
+
+.register{
+  .new-modal-style{
+    font-size: 12px;
+    .modal-header {
+      border: none;
+      justify-content: center;
+      .modal-title{
+        color:#0089FE !important;
+      }
+
+    }
+
+    .modal-footer{
+      justify-content: center;
+      padding:5px;
+      border: none;
+      button{
+        color:#0089FE!important;
+        border: 1px solid #0089FE!important;
+        box-shadow: none;
+        background: white!important;
+        line-height: 1;
+        padding: 6px 15px;
+      }
+    }
+  }
+}
+

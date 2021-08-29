@@ -1,0 +1,206 @@
+{
+  "MxCardBranch": {
+    "description": "Auto imported from components/cards/branch.vue"
+  },
+  "LazyMxCardBranch": {
+    "description": "Auto imported from components/cards/branch.vue"
+  },
+  "MxCardHospital": {
+    "description": "Auto imported from components/cards/hospital.vue"
+  },
+  "LazyMxCardHospital": {
+    "description": "Auto imported from components/cards/hospital.vue"
+  },
+  "MxCardMosque": {
+    "description": "Auto imported from components/cards/mosque.vue"
+  },
+  "LazyMxCardMosque": {
+    "description": "Auto imported from components/cards/mosque.vue"
+  },
+  "MxCardNotification": {
+    "description": "Auto imported from components/cards/notification.vue"
+  },
+  "LazyMxCardNotification": {
+    "description": "Auto imported from components/cards/notification.vue"
+  },
+  "MxCardPlan": {
+    "description": "Auto imported from components/cards/plan.vue"
+  },
+  "LazyMxCardPlan": {
+    "description": "Auto imported from components/cards/plan.vue"
+  },
+  "MxCardProject": {
+    "description": "Auto imported from components/cards/project.vue"
+  },
+  "LazyMxCardProject": {
+    "description": "Auto imported from components/cards/project.vue"
+  },
+  "MxCardRealestate": {
+    "description": "Auto imported from components/cards/realestate.vue"
+  },
+  "LazyMxCardRealestate": {
+    "description": "Auto imported from components/cards/realestate.vue"
+  },
+  "MxCardSchool": {
+    "description": "Auto imported from components/cards/school.vue"
+  },
+  "LazyMxCardSchool": {
+    "description": "Auto imported from components/cards/school.vue"
+  },
+  "MxFormMultiSelect": {
+    "description": "Auto imported from components/form/MultiSelect.vue"
+  },
+  "LazyMxFormMultiSelect": {
+    "description": "Auto imported from components/form/MultiSelect.vue"
+  },
+  "MxFormPhone": {
+    "description": "Auto imported from components/form/phone.vue"
+  },
+  "LazyMxFormPhone": {
+    "description": "Auto imported from components/form/phone.vue"
+  },
+  "MxFormSelectDealType": {
+    "description": "Auto imported from components/form/SelectDealType.vue"
+  },
+  "LazyMxFormSelectDealType": {
+    "description": "Auto imported from components/form/SelectDealType.vue"
+  },
+  "MxFormSelectMultiColumn": {
+    "description": "Auto imported from components/form/SelectMultiColumn.vue"
+  },
+  "LazyMxFormSelectMultiColumn": {
+    "description": "Auto imported from components/form/SelectMultiColumn.vue"
+  },
+  "MxFormSelectRange": {
+    "description": "Auto imported from components/form/SelectRange.vue"
+  },
+  "LazyMxFormSelectRange": {
+    "description": "Auto imported from components/form/SelectRange.vue"
+  },
+  "MxFormSelectStreet": {
+    "description": "Auto imported from components/form/SelectStreet.vue"
+  },
+  "LazyMxFormSelectStreet": {
+    "description": "Auto imported from components/form/SelectStreet.vue"
+  },
+  "MxFormUploadLogo": {
+    "description": "Auto imported from components/form/UploadLogo.vue"
+  },
+  "LazyMxFormUploadLogo": {
+    "description": "Auto imported from components/form/UploadLogo.vue"
+  },
+  "MxMapGmapCustomMarker": {
+    "description": "Auto imported from components/map/GmapCustomMarker.vue"
+  },
+  "LazyMxMapGmapCustomMarker": {
+    "description": "Auto imported from components/map/GmapCustomMarker.vue"
+  },
+  "MxMapGmapFreeHandDraw": {
+    "description": "Auto imported from components/map/GmapFreeHandDraw.vue"
+  },
+  "LazyMxMapGmapFreeHandDraw": {
+    "description": "Auto imported from components/map/GmapFreeHandDraw.vue"
+  },
+  "MxMapTypeController": {
+    "description": "Auto imported from components/map/typeController.vue"
+  },
+  "LazyMxMapTypeController": {
+    "description": "Auto imported from components/map/typeController.vue"
+  },
+  "MxMapZoomController": {
+    "description": "Auto imported from components/map/zoomController.vue"
+  },
+  "LazyMxMapZoomController": {
+    "description": "Auto imported from components/map/zoomController.vue"
+  },
+  "MxModalPhone": {
+    "description": "Auto imported from components/modals/Phone.vue"
+  },
+  "LazyMxModalPhone": {
+    "description": "Auto imported from components/modals/Phone.vue"
+  },
+  "MxModalPropsPopup": {
+    "description": "Auto imported from components/modals/propsPopup.vue"
+  },
+  "LazyMxModalPropsPopup": {
+    "description": "Auto imported from components/modals/propsPopup.vue"
+  },
+  "MxModalContactsCardModal": {
+    "description": "Auto imported from components/modals/ContactsCard/contactsCardModal.js"
+  },
+  "LazyMxModalContactsCardModal": {
+    "description": "Auto imported from components/modals/ContactsCard/contactsCardModal.js"
+  },
+  "MxModalContactsCard": {
+    "description": "Auto imported from components/modals/ContactsCard/index.vue"
+  },
+  "LazyMxModalContactsCard": {
+    "description": "Auto imported from components/modals/ContactsCard/index.vue"
+  },
+  "MxModalRequestMessages": {
+    "description": "Auto imported from components/modals/RequestMessages/index.vue"
+  },
+  "LazyMxModalRequestMessages": {
+    "description": "Auto imported from components/modals/RequestMessages/index.vue"
+  },
+  "MxModalModalRequestMessages": {
+    "description": "Auto imported from components/modals/RequestMessages/modalRequestMessages.js"
+  },
+  "LazyMxModalModalRequestMessages": {
+    "description": "Auto imported from components/modals/RequestMessages/modalRequestMessages.js"
+  },
+  "MxModalSearchNotification": {
+    "description": "Auto imported from components/modals/searchNotification/index.vue"
+  },
+  "LazyMxModalSearchNotification": {
+    "description": "Auto imported from components/modals/searchNotification/index.vue"
+  },
+  "MxNavBreadcrumb": {
+    "description": "Auto imported from components/nav/breadcrumb.vue"
+  },
+  "LazyMxNavBreadcrumb": {
+    "description": "Auto imported from components/nav/breadcrumb.vue"
+  },
+  "MxNavFilter": {
+    "description": "Auto imported from components/nav/filter.vue"
+  },
+  "LazyMxNavFilter": {
+    "description": "Auto imported from components/nav/filter.vue"
+  },
+  "MxNavFilterResults": {
+    "description": "Auto imported from components/nav/FilterResults.vue"
+  },
+  "LazyMxNavFilterResults": {
+    "description": "Auto imported from components/nav/FilterResults.vue"
+  },
+  "MxImg": {
+    "description": "Auto imported from components/img.vue"
+  },
+  "LazyMxImg": {
+    "description": "Auto imported from components/img.vue"
+  },
+  "MxLogoGlobal": {
+    "description": "Auto imported from components/Logo.global.vue"
+  },
+  "LazyMxLogoGlobal": {
+    "description": "Auto imported from components/Logo.global.vue"
+  },
+  "MxPano": {
+    "description": "Auto imported from components/Pano.vue"
+  },
+  "LazyMxPano": {
+    "description": "Auto imported from components/Pano.vue"
+  },
+  "MxSpinner": {
+    "description": "Auto imported from components/spinner.vue"
+  },
+  "LazyMxSpinner": {
+    "description": "Auto imported from components/spinner.vue"
+  },
+  "MxDecorFilter": {
+    "description": "Auto imported from components/decor-filter/decor-filter.js"
+  },
+  "LazyMxDecorFilter": {
+    "description": "Auto imported from components/decor-filter/decor-filter.js"
+  }
+}

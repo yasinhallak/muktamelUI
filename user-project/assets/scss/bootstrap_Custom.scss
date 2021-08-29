@@ -1,0 +1,39 @@
+// TODO: Deprecated
+@import './common';
+.text-primary {
+    color: $color_primary !important;
+}
+
+.bg-danger,.btn-danger {
+    background-color: #dc3545 !important;
+}
+.bg-dark,.navbar-dark{
+    background-color: $color_dark !important;
+}
+
+body {
+    background-color: $color_ground;
+    font-family: $font;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// // Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

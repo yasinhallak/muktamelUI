@@ -1,0 +1,70 @@
+.map {
+    .form-group{
+        margin-bottom: 0.4rem;
+        width: 100%;
+        .validation-message {
+            width: 100%;
+            font-size: 0.70rem;
+            color: red;
+        } 
+        .adrs-line-two {
+            width: 14rem;
+            font-weight: bold !important;
+            color: #1b95e0 !important;
+            position: relative;
+        }
+        .form-control{
+            border-color: $color_5;
+            min-height: 2rem;
+            max-height: 2rem;
+            font-size: .9rem;
+        }
+        .text-danger{
+            margin-right: 3px;
+        }
+    }
+
+    .map-styl {
+        border: solid 0.05rem $color_5;
+        height: 19.7rem;
+        width: 99.9%;
+        margin-top: 1.85rem;
+    }
+}
+
+.select2-container {
+    .select2-results__options, .select2-selection__rendered {
+        font-size: .9rem;
+    }
+    .select2-selection__rendered {
+        margin-top: .1rem;
+    }
+    .select2-search__field {
+        direction: ltr;
+        font-size: .9rem;
+    }
+    .select2-selection__arrow {
+        right: 0 !important;
+        left: unset !important;
+    }
+}
+.select2-container--default .select2-selection--single {
+    min-height: 2rem;
+    max-height: 2rem;
+}
+.rtl .select2-container {
+    .select2-results__options, .select2-selection__rendered {
+        font-size: .9rem;
+    }
+    .select2-selection__rendered {
+        margin-top: .1rem;
+    }
+    .select2-search__field {
+        direction: rtl;
+        font-size: .9rem;
+    }
+    .select2-selection__arrow {
+        left: 0 !important;
+        right: unset !important;
+    }
+}

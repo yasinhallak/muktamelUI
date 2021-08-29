@@ -1,0 +1,390 @@
+@import './_common.scss';
+
+.second_navbar {
+    position: relative;
+    height: 3.5rem;
+    background-image: url('~@/assets/images/nav-bg.jpg');
+    border-top: 1px solid #70707033;
+
+    .logo {
+        position: absolute;
+
+        img {
+            width: 86px;
+            height: 20px;
+            margin-top: 3px;
+        }
+    }
+
+    .container {
+        height: 100%;
+        .row {
+        height: 100%;
+        //#region Login & Register
+            h4 {
+                font-size: 1.375rem;
+                font-weight: bold;
+                font-family: $font;
+                @media (max-width: 575.98px) {
+                            font-size: 0.8rem !important;
+                }
+            }
+        //#endregion
+
+        //#region controlPanel
+        nav {
+            .breadcrumb {
+                font-size: 0.875rem;
+                font-family: $font;
+                margin-bottom: 0 !important;
+                height: 3.5rem;
+                background: none;
+                .back a{
+                    text-decoration: none;
+                    color: #008aff;
+                    cursor: pointer;
+                }
+                .back:before {
+                    content: "<";
+                    padding-right: 0.3rem;
+                    padding-left: 0.3rem;
+                    color: #000;
+                }
+                .back:after {
+                    content: "|";
+                    padding-right: 0.3rem;
+                    padding-left: 0.3rem;
+                    color: #000;
+                }
+                .breadcrumb-item{
+                    padding-left: 0;
+                    a{
+                        color: #008aff;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                }
+                .breadcrumb-item:not(:nth-child(2)):before {
+                    content: ">" !important;
+                    padding-right: 0.3rem;
+                    padding-left: 0.3rem;
+                    color: #000;
+                }
+            }
+        }
+        .panel{
+            a {
+                border: none;
+                background-color: #1ebe3c;
+                color: #fff;
+                font-size: 0.75rem;
+                height: 2rem;
+                width: 6.4rem;
+                margin: auto 0.5rem;
+                display: flex;
+                @media (max-width: 1200px) {
+                    font-size: 0.60rem !important;
+                }
+            }
+            a:hover {
+                background-color: #20a339;
+            }
+            a:focus {
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                outline: 0;
+            }
+            button{
+                height: 2rem;
+                width: 6.4rem;
+                margin: auto 0.2rem;
+                font-size: 0.75rem;
+                font-family: $font;
+                background: #008aff;
+                border: none;
+                @media (max-width: 1200px) {
+                    font-size: 0.60rem !important;
+                }
+            }
+            button:hover {
+                background: #0075d8;
+                color: #FFF;
+            }
+            button:focus {
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                outline: 0;
+            }
+            .Dynamic_Colp {
+                position: relative;
+                display: inline-block;
+                .Dynamic_List_Btn {
+                    display: none;
+                    @media (max-width: 992px) {
+                        display: inline-block;
+                    }
+                }
+                .Dynamic_List_Content {
+                    display: flex ;
+                    @media (max-width: 992px) {
+                        display: none !important;
+                        position: absolute;
+                        z-index: 1;
+                        max-width: min-content;
+                        top: 2rem;
+                        right: .2rem;
+                        left: .2rem;
+                        box-shadow: 0 1rem 1rem 0.4rem rgba(0, 0, 0, 0.2);
+                    }
+                .dynamic_btn {
+                    display: none;
+                    @media (max-width: 992px) {
+                        display: block;
+                        margin: 0;
+                        border-radius: unset !important;
+                       }
+                    }
+                }
+            }
+            .pers_accu {
+                border: 0.5px solid #a5a5a5;
+                background: #dddddd;
+            }
+            .pers_accu:hover {
+                background: #6c757d;
+                color: #FFF;
+            }
+            .pers_accu:focus {
+                box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+                outline: 0;
+            }
+            .button-user {
+                color: $color_dark !important;
+                background-color: #e8e8e8 !important;
+            }
+        }
+        //#endregion
+
+        // #region register
+        .back_sign {
+            button{
+                height: 2rem;
+                margin: auto 0.5rem;
+                font-size: 0.75rem;
+                font-family: $font;
+                border: none;
+                color: $color_primary !important;
+                background-color: #fff !important;
+                border: 0.5px solid #a5a5a5;
+            }
+            button:focus{
+                outline: 0;
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+            }
+        }
+        //#endregion
+
+        //#region userPage
+        .myCompanies {
+
+            button {
+                background-color: $color_ground;
+                font-family: $font;
+                color: $color_dark;
+                height: 2rem;
+                margin: auto;
+                font-size: 0.75rem;
+                border: 0.5px solid #a5a5a5;
+            }
+            button:after {
+                display: none;
+            }
+        }
+        .companies_list, .regist{
+                right: unset!important;
+        }
+        .myCompanies .dropdown {
+            margin: auto 0;
+            .dropdown-content {
+                width: 17rem;
+                box-shadow: 0 1rem 1rem 0.4rem rgba(0, 0, 0, 0.2);
+                padding: 0;
+                border: none;
+                position: absolute;
+                will-change: transform;
+                top: 15px !important;
+                left: -14.2rem ;
+                transform: translate3d(8px, 31px, 0px);
+                background-color: #FFF;
+                .contain {
+                    background-color: #FFF;
+                    height: 100%;
+                }
+                .list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    .dropdown-item {
+                        border-right: 4px solid $color_ground;
+                        border-left: 4px solid $color_ground;
+                        border-top: 4px solid $color_ground;
+                        padding: 0.3rem 0.6rem;
+                        a {
+                            padding: 7px 16px;
+                            span {
+                                font-family: $font;
+                                color: $color_dark;
+                                font-size: 0.8125rem;
+                            }
+                        }
+
+                    }
+                    .dropdown-item:active {
+                        background-color: #FFF;
+                    }
+                    div:active > span {
+                        color: #fff;
+                    }
+
+                    div:last-child {
+                        border-bottom: 4px solid $color_ground;
+                    }
+                }
+            }
+            .dropdown-content:before {
+                content: " ";
+                position: absolute;
+                left: 14.5rem;
+                top: -0.9rem;
+                border-top: none;
+                border-right: 15px solid transparent;
+                border-left: 15px solid transparent;
+                border-bottom: 15px solid $color_ground;
+            }
+            p{
+                font-family: $font_bold;
+                color: $color_primary;
+                margin-bottom: 0;
+                font-size: 0.875rem;
+            }
+            p:hover{
+                background-color: unset;
+
+            }
+            div span{
+                font-family: $font;
+                color: $color_dark;
+                margin-bottom: 0;
+                font-size: 0.875rem;
+            }
+                .sign_up {
+                    margin: auto;
+                    border: none;
+                    background-color: unset;
+                    display: flex;
+
+                    a {
+                        background-color: $color_3;
+                        width: 100%;
+                        padding: 0.938rem;
+                        height: 3rem;
+                        border: none;
+                        box-shadow: 0 7px 8px -1px rgba(0, 0, 0, 0.2);
+                        border-radius: 0.125rem;
+                        font-size: 0.875rem;
+                        line-height: 1;
+
+                        span {
+                            display: inline-block;
+                            font-weight: bold;
+                            color: $color_danger;
+
+                        }
+                    }
+                }
+            }
+
+
+        //#endregion
+
+
+
+        }
+    }
+}
+.rtl .second_navbar .logo img {
+    width: 86px;
+    height: 35px;
+}
+
+
+.rtl .second_navbar .row .myCompanies .dropdown .dropdown-content{
+    left: -.4rem  ;
+}
+.rtl .second_navbar .row .myCompanies .dropdown .dropdown-content:before {
+    left: .7rem;
+}
+
+
+
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    z-index: 9999;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .show {
+      display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .row .btn{
+        button, a {
+            font-size: 0.60rem !important;
+            width: 5.5rem !important;
+        }
+    }
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .second_navbar{
+        .row{
+            margin-right: 0;
+            .bread{
+                display: none;
+            }
+        }
+    }
+ }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .second_navbar{
+        .row:first-child{
+            margin-right: 0;
+        }
+    }
+}

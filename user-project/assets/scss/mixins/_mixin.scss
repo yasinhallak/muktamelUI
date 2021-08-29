@@ -1,0 +1,116 @@
+// TODO: Deprecated
+
+%ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  %center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  %specialScroll{
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $color_primary;
+      border-radius: 10px;
+    }
+  }
+
+  @mixin pxRem ($key, $value ) {
+    #{$key}: calc(#{$value}rem/16);
+  }
+
+  %over-lay{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  %specialScroll{
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $color_primary;
+      border-radius: 10px;
+    }
+  }
+
+  %custom-carousel{
+    .owl-carousel{
+      .owl-nav{
+        top: 42%;
+      position: absolute;
+      width: 96.5%;
+      margin-top: 0;
+      transform: translate3d(0, -50%, 0);
+      left: 1.75%;
+      button[class*="owl-"] {
+          background-color: transparent;
+          height: 43px;
+          width: 33px;
+          &.owl-prev{
+              background-image: url("~@/assets/images/photo_slide_right.png") !important;
+              color: transparent;
+          }
+          &.owl-next{
+              background-image: url("~@/assets/images/photo_slide_left.png") !important;
+              color: transparent;
+          }
+          &.owl-prev:before,
+          &.owl-next:before{
+              display:none;
+          }
+          &:hover, &.hover, &:active, &.active{
+              background-color: transparent;
+              border-color: transparent;
+          }
+          &:disabled{
+              background-color: transparent;
+              border-color: transparent;
+              opacity: .3;
+          }
+      }
+      }
+    }
+  }
+
+%header{
+  h3{
+    @include pxRem(font-size,23);
+    @extend .main-font;
+    color: $color_primary;
+    font-weight: $bold;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 1.7;
+  }
+}
+
+%lastfooter{
+  margin-top: 1rem;
+  background-color: #001324;
+  padding-top: 25px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}

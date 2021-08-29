@@ -1,0 +1,68 @@
+@import "~@/assets/n-scss/pages/agency.scss";
+@import "~@/assets/n-scss/components/popup_props.scss";
+
+.service-col{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+::v-deep {
+  .tooltip.b-tooltip-info .tooltip-inner{
+    color: #fff !important;
+    background-color: #31da9a !important;
+  }
+}
+
+::v-deep .gm-style-iw-t::after{
+  display:none !important;
+}
+::v-deep .gm-style-iw {
+  transform: translate(-104%, -30%) !important;
+  &:hover {
+    box-shadow: unset !important;
+  }
+  .gm-style-iw-t,.gm-style-iw-d {
+    right: 80px !important;
+    bottom: 40px !important;
+
+    .hospital-goverment,.hospital-private {
+      width: 210px;
+      height: 41px;
+
+      img{
+        padding: 15px;
+
+      }
+      .details .title h2{
+        font-size:10px !important;
+      }
+    }
+
+    .mosque-masjid,.mosque-jamii {
+      width: 210px;
+      height: 41px;
+
+      img{
+        width:40px !important;
+        height:27px !important;
+        padding: 0;
+        border:unset !important;
+
+      }
+      .details .title h2{
+        font-size:10px !important;
+      }
+    }
+
+
+  }
+}
+
+
+@media (min-width: 640px) {
+  .box-collapse.offer-details-box.mosque{
+    width:360px !important;
+  }
+}
+

@@ -1,0 +1,13 @@
+@mixin pxRem ($key, $value ) {
+  #{$key}: calc(#{$value}rem/16);
+}
+
+
+@mixin mx-dropdown-155{
+  top:145px;
+  left: 0;
+  right:0;
+  margin:0;
+}
+
+@import "../shared-style/breakpoint-shared";

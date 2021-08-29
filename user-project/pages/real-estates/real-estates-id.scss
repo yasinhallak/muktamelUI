@@ -1,0 +1,155 @@
+.main-detail-section {
+  .sidebar {
+    .agent_box {
+      .com-btn {
+        background-color: var(--red-deep) !important;
+      }
+    }
+  }
+
+  .company-information .contact-us-768 li a {
+    background: var(--red-deep);
+  }
+}
+
+.calculator-row {
+  .control-col {
+    max-width: 350px;
+
+    .calc_row {
+      button, input {
+        box-shadow: unset !important;
+      }
+    }
+  }
+
+  .board-col {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .calc_resault_box {
+      width: 250px;
+      height: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 5px 30px #00000033;
+    }
+
+    button {
+      padding: 5px 10px;
+      height: 30px;
+      border-radius: 0;
+      box-shadow: 0 2px 0 #AC161B;
+    }
+  }
+}
+
+.calc-area-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  .calc_resault_box{
+    width:250px;
+    height:150px;
+    margin-right:auto !important;
+    margin-left:auto !important;
+    box-shadow: 0px 5px 30px #00000033;
+  }
+  button{
+    width:250px;
+    height:30px;
+    font-size:14px !important;
+    font-weight:bold !important;
+    margin-right:auto !important;
+    margin-left:auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 0 #AC161B;
+    padding:0
+  }
+}
+
+.label-area-col{
+  max-width:407px;
+  @media (min-width: 640px) and (max-width: 767px) {
+    max-width:359px;
+  }
+  .texts-row{
+    span{line-height:24px}
+  }
+}
+
+#popular7{
+  .col-muk-6.d-muk-flex{
+    height: 30px;
+  }
+}
+
+@media (max-width: 639px) {
+
+  .big-col {
+    padding: 0
+  }
+  .mobile-container {
+    padding: 0 !important;
+  }
+
+  .mobile-area-col{
+    max-width:360px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  #collapse4 {
+    .calc_resault_box {
+      width: 250px;
+      height: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 5px 30px #00000033;
+    }
+
+    .calc_row {
+      button, input {
+        box-shadow: unset !important;
+      }
+    }
+
+    .control-sm-section{
+      width:360px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    button.search-finance {
+      padding: 5px 10px;
+      height: 30px;
+      width: 250px;
+      border-radius: 0;
+      box-shadow: 0 2px 0 #AC161B;
+      margin-left:auto;
+      margin-right:auto;
+      font-size: 14px !important;
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .big-col {
+    padding: 0
+  }
+
+  .mobile-container {
+    padding: 0 !important;
+  }
+
+  .realEstate-container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+

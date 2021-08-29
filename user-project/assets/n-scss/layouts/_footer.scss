@@ -1,0 +1,220 @@
+.website_footer {
+    //background-image: url("./static/Saudi_Buildings_transparent.svg");
+    background-image: url('~@/static/Saudi_Buildings_transparent.svg');
+    background-size: 930px 160px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  margin-top:auto;
+  .container-muk{
+    padding:0;
+    height:185px;
+
+    @media (min-width: 1130px) {
+      padding-left:15px;
+      padding-right:15px;
+    }
+  }
+  .footer-cover{
+    height: 165px;
+    left: 51%;
+    @media (max-width: 959px) {
+      left: 50%;
+    }
+    transform: translateX(-50%);
+    width: 930px;
+    @media (max-width: 860px){
+      object-fit: cover;
+    }
+  }
+
+  .copyright {
+    padding: 4.5px 0;
+    p{
+      letter-spacing: -0.5px;
+    }
+  }
+  hr {
+    background: #000000;
+    opacity: 0.3;
+    margin: 0;
+  }
+  background-color: #fff;
+  padding: 0;
+  // position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  .logo {
+    height: 75px;
+    margin: 8.5px 0 3.5px 0;
+    img {
+      width: 151.57px;
+      height: 60px !important;
+      }
+  }
+  .companies_reg,
+  .about_us {
+    font-family: $font;
+    font-size: 12px;
+    white-space: nowrap;
+    a {
+      color: #0089fe;
+      text-decoration: none;
+    }
+  }
+
+  .about_us {
+    .list-group {
+      padding-right: 0;
+      padding-left: 0;
+      .list-group-item {
+        background-color: unset;
+        border: none;
+        padding: 0;
+        a {
+          color: #0089fe;
+          font-size: 12px;
+          letter-spacing: -0.5px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .socials .row {
+    float: right;
+    .social_media {
+      padding-left: 0;
+      padding-right: 0;
+      .list-group {
+        padding-left: 0;
+        .list-group-item {
+          background-color: unset;
+          padding: 0 5px;
+          a {
+            color: #0089fe;
+            font-size: 18px;
+            text-decoration: none;
+            span {
+              background-color: #fff;
+              width: 31px;
+              height: 31px;
+              border: 1px solid #0000004a;
+              i {
+                font-size: 18px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .stores {
+      padding-left: 10px;
+      padding-right: 0;
+      img {
+        width: 111px;
+        height: 33px;
+      }
+    }
+  }
+  p {
+    color: #0089fe;
+    font-size: 12px;
+    text-decoration: none;
+    margin-bottom: 0;
+    line-height: 13px;
+  }
+}
+
+.rtl
+.website_footer
+.about_us
+.list-group
+.list-group-item:not(:last-child)::after {
+  margin-left: 0;
+  margin-right: 13px;
+}
+.rtl .website_footer .socials .row {
+  float: left;
+}
+
+
+
+  .website_footer .about_us .row .list-group {
+    @media (max-width: 959px) {
+      width: 304px;
+    }
+    @media (min-width: 960px) {
+      width: 468px;
+    }
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 6px 0;
+  }
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 430px) {
+  .website_footer {
+    .companies_reg {
+      padding: 0.75rem 0;
+    }
+    .about_us .row .list-group {
+      width: 304px;
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      padding: 6px 0;
+      .list-group-item {
+        @media (min-width: 345px) {
+          display: inline-block;
+        }
+        //padding: 3px 4px;
+      }
+      .list-group-item:not(:last-child)::after {
+        display: none;
+      }
+    }
+  }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .website_footer {
+    .socials .row {
+      .social_media {
+        display: flex;
+        justify-content: center;
+        ul {
+          padding-left: 0;
+        }
+      }
+    }
+    .stores {
+      justify-content: center !important;
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .website_footer {
+    .logo,
+    .companies_reg,
+    .about_us,
+    .socials {
+      display: flex !important;
+      justify-content: center !important;
+    }
+    .socials .row {
+      justify-content: center !important;
+      .stores {
+        padding-left: unset;
+        padding-right: unset;
+      }
+    }
+  }
+  .website_footer p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,33 @@
+.btn-reset,.btn-done{
+  font-size: 12px;
+  padding: 7px 14px;
+  width: 100px !important;
+}
+
+
+.item-separator{
+  &:not(:first-child){
+    &:before{
+      content: ",";
+      font-size: 14px;
+      margin-left: 4px;
+
+    }
+  }
+}
+.For__Live label {
+  background-color: #e7ecf2;
+  color: #001324;
+  border-radius: 0.25rem !important;
+  overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 0;
+  height: 1.875rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.For__Live label:hover {
+  background-color: #0089fe !important;
+  color: #fff;
+}

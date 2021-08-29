@@ -1,0 +1,201 @@
+.select-deal-type {
+  height: 34px;
+  .input-group {
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+    font: normal normal normal 13px/25px Droid Arabic Kufi;
+    padding:0;
+    border:0;
+    outline: 0;
+    text-align: right;
+    .placeholder{
+      color:#777777
+    }
+    &:before {
+      position: absolute;
+      content: '\f078';
+      left: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      font: normal normal 700 11px/14px 'Font Awesome 5 Free';
+      color: #505050;
+      z-index: 1;
+    }
+    .form-control{
+      padding-left:25px;
+      height: 100%;
+      line-height: 1.5;
+      border: 1px solid #70707080 !important;
+    }
+  }
+
+  .auction-results{
+    font: normal normal normal 10px/19px 'Droid Arabic Kufi';
+    color:#000
+  }
+}
+
+
+
+
+
+
+
+.select-deal-type-dropdown-menu {
+  font: normal normal normal 13px/25px Droid Arabic Kufi;
+  text-align: right;
+  width:240px;
+  box-shadow: 0 0 8px rgba(113, 113, 113, 0.7);
+  z-index: 110;
+  background: #fff;
+  overflow: hidden;
+  .filter-dropdown-menu-inner{
+    padding: 10px;
+    background: white;
+  }
+  @media (max-width: 767px){
+    left: 0px;
+    right:auto;
+  }
+
+  .deal-type-list {
+    li{
+      position: relative;
+      &:not(:last-child){
+        border-bottom: 1px solid #dadada;
+        padding-bottom: 6px;
+      }
+      &:not(:last-child)::before{
+        content:'\f078';
+        font-family: "Font Awesome 5 Free";
+        font-weight:700;
+        position: absolute;
+        left:10px;
+      }
+      &.collapsed{
+        &::before{
+          content:'\f106';
+        }
+      }
+      .deal-type-head{
+        position: relative;
+        display: flex;
+      }
+      .deal-type-circle{
+        width:10px;
+        height: 10px;
+        position: absolute;
+        top:50%;
+        right:75px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+      }
+      .deal-type-label{
+        display:flex;
+        align-items: center;
+      }
+    }
+    label {
+      cursor: pointer;
+    }
+
+    .deal-type-title {
+      font-size:14px;
+      font-weight: bold;
+      color:#000;
+      display: inline-block;
+      width: 70px;
+      flex-shrink: 0;
+    }
+  }
+  .search-type-item {
+    margin: 4px 16px 4px 4px;
+    font-size: 13px;
+    text-align: center;
+
+    input[type=checkbox]:checked + label {
+      background: #0089FE;
+      color: white;
+    }
+
+    input[type=radio]:checked + label {
+      background: #0089FE;
+      color: white;
+    }
+
+    input[type=checkbox]:disabled + label {
+      opacity: 0.6;
+      background: #E1E7EC;
+      color: #000000;
+      cursor: no-drop;
+    }
+
+    label {
+      width: 195px;
+      height:30px;
+      border-radius: 3px;
+      background: #E1E7EC;
+      color: #000000;
+      cursor: pointer;
+      display:flex;
+      align-items:center;
+      justify-content: center;
+
+      .prop {
+        font-size: 8px;
+      }
+    }
+  }
+  .filter-section {
+    position: relative;
+
+    .filter-footer{
+      border-top:1px solid rgba(112, 112, 112, 0.25);
+      padding-top: 8px;
+      margin-top: 8px;
+      .btn-filter{
+        border-radius: 3px;
+        font-size: 12px;
+        padding:7px 14px;
+        width:100px;
+        border:0;
+      }
+      .btn-reset{
+        background: #fff;
+        color:#55616C;
+        padding:0;
+      }
+      .btn-apply{
+        background: #0089FE;
+        color:#FFFFFF
+      }
+    }
+  }
+}
+.checkbox-circle{
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border:1px solid #0089FE;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left:5px;
+}
+.deal-type-checkbox{
+  display: none;
+  &:checked + label{
+    .checkbox-circle{
+      &:after{
+        content: '';
+        width:10px;
+        height: 10px;
+        border-radius: 50%;
+        top: 2px;
+        left: 2px;
+        background: #0089FE;
+        position: absolute;
+      }
+    }
+  }
+}

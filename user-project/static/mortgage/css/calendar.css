@@ -1,0 +1,54 @@
+.calendars-month-header, .calendars-month-header select, .calendars-month-header input {
+    background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+    margin: 5px 0px;
+}
+
+.calendars-month-header {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.calendars-cmd:hover {
+    background-color: #777;
+}
+.calendars-month td a:hover {
+    background-color: white;
+    color: white;
+    background: -webkit-linear-gradient(top, #bd1414 0%,#411111 100%);
+}
+
+    .calendars-month-header select, .calendars-month-header input {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    select.calendars-month-year {
+        background: #fff !important;
+        color: #000 !important;
+    }
+
+    .calendars-nav, .calendars-ctrl, .calendars-month th, .calendars-month th a {
+        background-color: white;
+        color: black;
+        background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+        border: none;
+        margin: 10px 0px 0px;
+    }
+
+    .calendars a {
+        color: black;
+    }
+
+    .calendars-month a, .calendars-month td .calendars-weekend, .calendars-month td {
+        background-color: white;
+        border: none;
+        padding: 3px;
+    } 
+
+    .calendars-month {
+        border: none;
+        padding: 3px;
+    }

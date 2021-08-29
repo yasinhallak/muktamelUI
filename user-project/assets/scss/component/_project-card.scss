@@ -1,0 +1,166 @@
+.project-card{
+    padding: .15rem;
+    border: 1px solid #b2b2b2;
+    .img-container{
+        @extend %center;
+        position: relative;
+        padding:1px;
+        width: 100%;
+        height: 100%;
+        min-height: 150px;
+        max-width: 234px;
+        max-height: 158px;
+        overflow: hidden;
+        .justImg{ @extend %center; }
+        .overlays{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            padding:1px;
+            .upperlayer{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                .det{
+                    @extend .font-size-17px;
+                    position: absolute;
+                    color: $color_white;
+                    background-color: #404040bf;
+                    &.date{
+                        top: 0px;
+                        right: 0px;
+                        padding: 3px;
+                        img{
+                            width:17px;
+                            height:17px;
+                        }
+                    }
+                    &.number{
+                        bottom: 0px;
+                        right: 0px;
+                        padding:0px 5px;
+                    }
+                    &.img-kind{
+                        bottom: 0px;
+                        left: 0px;
+                        padding:2.5px;
+                        img{
+                            bottom:0;
+                            left:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .card-body{
+        position: relative;
+        @media ( max-width: 786px ) {
+            padding-top: .5rem !important;
+        }
+        .icon{
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            .fa-heart{
+                color: #ff4040;
+                cursor: pointer;
+                &.no{
+                    color: #7f7f7f;
+                }
+            }
+        }
+        .card-title{
+            @extend %ellipsis;
+            color: $color_primary;
+        }
+        ul.location{
+            li { color: $color_2; }
+        }
+        ul.icons{
+            img{
+                width: 22px;
+                height: 17px;
+            }
+            li{ margin-left: 3px; }
+        }
+        .pro-kinds{
+            color:$color_dark;
+            .fa-circle{
+                color: $color_danger;
+                margin-left: 5px;
+                font-size:6px;
+            }
+        }
+        .btn-new{
+            width:75%;
+            overflow:hidden;
+            @media (max-width:545px){
+                width:100%;
+            }
+            a{
+                @extend %ellipsis;
+                min-width:85px;
+                padding:4px 4px 4px 0;
+            }
+            a:first-of-type{ min-width:46px; }
+            a:last-of-type{ min-width:53px; }
+            .phone{ background-color: $color_dngr; }
+            .envelope{ background-color: $color_primary; }
+            .whatsapp{ background-color: #25d366; }
+        }
+        .ref{
+            @media (min-width:1200px) {
+                position: absolute;
+                bottom: 0;
+                left:5px;
+            }
+            @media (min-width:767px) and (max-width:1200px){
+                position:static;
+            }
+            @media (min-width:545px) and (max-width:767px){
+                position: absolute;
+                bottom: 0;
+                left:5px;
+            }
+            @media (max-width:545px) {
+                position:static;
+            }
+        }
+
+    }
+    .Camera__Icon{
+        bottom: .1rem;
+        z-index: 2;
+        .ava-projectes .project-card div.position-relative .Camera__Icon img {
+            width: 1.2rem;
+            cursor: pointer;
+        }
+    }
+    .View__Icon{
+        bottom: .1rem;
+        left: 0;
+        z-index: 2;
+        img {
+            width: 37px;
+            height: 37px;
+            cursor: pointer;
+        }
+    }
+    .View__Heart{
+        top: .1rem;
+        left: 0;
+        z-index: 2;
+    }
+    .Date__Icon{
+        top: .0rem;
+        z-index: 2;
+        background-color: rgba(0,0,0,0.5);
+    }
+}

@@ -1,0 +1,85 @@
+<nav :class="[isSidebar ? 'is-sidebar' : '']" id="filter">
+  <section id="primaryTypes">
+    <h2 key="primary-types-title">التصنيف الرئيسي</h2>
+    <label
+      v-for="(item,index) in primarySpecification"
+      :class="[selectedPrimary == item ? 'selected' : '']"
+    >
+      <input
+        type="radio"
+        name="selectedPrimary"
+        id="item"
+        :value="item"
+        @input="$emit('update:selectedPrimary', $event.target.value)"
+        v-model="selectedPrimary"
+        @change="onReloadData($event.target.value)"
+        style="display: none;"
+      />
+      {{ $t(`primarySpecification.${item}`) }}
+      <i v-if="selectedPrimary == item" class="fas fa-arrow-left"></i>
+    </label>
+  </section>
+
+  <section id="secondaryTypes">
+    <h2 key="secondary-types-title">التصنيف الثانوي</h2>
+    <select
+      name="secondarySelector"
+      id="secondarySelector"
+      :disabled="!selectedPrimary"
+      @input="$emit('update:selectedSecondary', $event.target.value)"
+      v-model="selectedSecondary"
+      @change="onReloadData"
+    >
+      <option value="0"></option>
+      <option
+        v-for="(item,index) in secondarySpecification[selectedPrimary - 1]"
+        :value="item"
+      >
+        {{$t(`secondarySpecification.${item}`)}}
+      </option>
+    </select>
+  </section>
+
+  <section id="colorOptions">
+    <h2 key="color">اللون</h2>
+    <div id="colorGrid">
+      <label
+        v-for="(item, index) in colors"
+        :data-circle="item.id"
+        :data-color="item.id"
+        :class="[selectedColor == item.id ? 'selected' : '',[index == 0 ? 'color-all' : '']]"
+        class="colorCircle"
+      >
+        <input
+          type="radio"
+          name="color"
+          id="item.id"
+          :value="item.id"
+          @input="$emit('update:selectedColor', $event.target.value)"
+          v-model="selectedColor"
+          @change="onReloadData"
+          class="colorCircle"
+          style="display: none;"
+        />
+        <div :data-color="item.id">
+          <span v-if="item.id==0" style="width: 50px;">الكل</span>
+        </div>
+        <i v-if="index != 0 && selectedColor == item.id" class="fas fa-check"></i>
+      </label>
+    </div>
+  </section>
+
+  <section id="otherOptions">
+    <input
+      type="checkbox"
+      name="onlyInMuktamel"
+      id="onlyInMuktamel"
+      @input="$emit('update:isInMuktamel', !isInMuktamel)"
+      v-model="isInMuktamel"
+      @change="onReloadData"
+    />
+    <label for="onlyInMuktamel" key="only-in-Muktamel"
+    >صور من عقارات مكتمل فقط</label
+    >
+  </section>
+</nav>

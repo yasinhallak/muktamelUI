@@ -1,0 +1,9 @@
+{
+  "fields": {
+    "title": "العنوان مط888لوب",
+    "password": "كلمة السر"
+  },
+  "validation": "en.messages",
+  "message": "hello i18n !!",
+  "ui": ""
+}

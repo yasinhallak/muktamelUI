@@ -1,0 +1,47 @@
+
+.custom-container-15{
+  padding-left:15px !important;
+  padding-right:15px !important
+}
+
+
+.contact-card-modal .modal-dialog {
+  max-width: 400px;
+}
+
+.modal-content {
+
+  textarea {
+    min-height: 4rem !important;
+  }
+
+  .form-group .validation-message {
+    width: 100%;
+    font-size: 0.7rem;
+    color: red;
+    height: auto !important;
+  }
+
+    button.btn {
+      font-size: 0.8rem;
+    padding: 0.3rem 0.65rem !important;
+      border-radius: 0.2rem !important;
+      min-width: auto !important;
+    }
+ input.btn, a.btn{
+      border-radius: 0.2rem !important;
+    }
+
+  @media (max-width: 575.98px) {
+    .padding-0-mobile{
+     padding:0 !important;
+    }
+    form .form-group {
+      padding: 0 !important;
+    }
+    .text-area{
+      padding:0
+    }
+  }
+
+}

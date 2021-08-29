@@ -1,0 +1,311 @@
+@import './common';
+@import './bootstrap_Custom.scss';
+@import './first_Nav.scss';
+@import './second_Nav.scss';
+@import './footer.scss';
+
+.input-progress{
+    text-align: left;
+    min-width: 160px;
+    .progress-title{
+        font-size: 11px;
+    }
+    .progress-score{
+        line-height: 1;
+        font-weight: bold;
+        span{
+            font-size: 11px;
+        }
+    }
+    .input-progress-bar{
+        background: #d8d8d8;
+        width:100%;
+        height: 5px;
+        overflow: hidden;
+        .input-progress-bar-inner{
+            background: rgb(109,159,196);
+background: linear-gradient(90deg, rgba(0,212,255,1)  0%, rgba(75,133,255,1) 100%);
+            height: 100%;
+            transition: all ease 0.2s;
+        }
+    }
+}
+
+.oneQRow{
+    .input-progress{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.Land_Deta .input input{
+    font-size: 15px !important;
+    font-family: sans-serif;
+}
+
+.tooltip > .tooltip-inner{
+    font-size: 13px !important;
+    background: #1192ff;
+    text-align: right;
+}
+
+
+
+
+#svg circle {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s linear;
+    stroke: #d2d2d2;
+    stroke-width: 1em;
+  }
+  #svg #bar {
+    stroke: #FF9F1E;
+  }
+  #cont {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 2em auto;
+    border-radius: 100%;
+    position: absolute;
+    top: -32px;
+    left: -34px;
+    transform: scale(0.6);
+  }
+  #cont:after {
+    position: absolute;
+    display: block;
+    height: 160px;
+    width: 160px;
+    left: 50%;
+    top: 50%;
+    content: attr(data-pct)"%";
+    margin-top: -80px;
+    margin-left: -80px;
+    border-radius: 100%;
+    line-height: 160px;
+    font-size: 2em;
+  }
+
+.Loading-overlay {
+  position: absolute;
+  top: -100%;
+  bottom: -67.8%;
+  right: 0;
+  left: 0;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8e8e8;
+}
+
+.box {
+  position: fixed;
+  width: 33.33vw;
+  height: 33.33vw;
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 180px;
+  min-height: 180px;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  top: 35%;
+}
+
+.box * {
+  letter-spacing: normal;
+  white-space: normal;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  width: 120px;
+  height: 120px;
+}
+
+.spinner span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+}
+
+.spinner.type2 {
+  border-radius: 50%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #001324 transparent;
+  -webkit-animation: spinner1_1 2.2s infinite linear forwards;
+  animation: spinner1_1 2.2s infinite linear forwards;
+}
+
+.spinner.type2::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #001324 transparent;
+  animation: spinner1_2 .8s infinite linear forwards reverse;
+}
+
+.spinner.type2 span {
+  animation: spinner_loading_text 2.2s infinite linear forwards reverse;
+  color: #001324;
+  font-weight: bold;
+}
+
+@-webkit-keyframes spinner1_1 {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spinner1_1 {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinner1_2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner1_2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinner8_loading_text {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  50% {
+    -webkit-transform: translate(-50%, calc(-50% + 32px));
+    transform: translate(-50%, calc(-50% + 32px));
+    opacity: 0;
+  }
+
+  50.1% {
+    -webkit-transform: translate(-50%, calc(-50% - 32px));
+    transform: translate(-50%, calc(-50% - 32px));
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes spinner8_loading_text {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  50% {
+    -webkit-transform: translate(-50%, calc(-50% + 32px));
+    transform: translate(-50%, calc(-50% + 32px));
+    opacity: 0;
+  }
+
+  50.1% {
+    -webkit-transform: translate(-50%, calc(-50% - 32px));
+    transform: translate(-50%, calc(-50% - 32px));
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes spinner_loading_text {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spinner_loading_text {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+//override style
+@import "../shared-style/custom-grid";
+@import "override";

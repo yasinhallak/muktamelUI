@@ -1,0 +1,50 @@
+﻿{
+  "clients":[
+    {
+      "id": 0,
+        "imgSrc": "/img/clients/0.webp"
+    },
+    {
+      "id": 1,
+      "imgSrc": "/img/clients/1.webp"
+    },
+    {
+      "id": 2,
+      "imgSrc": "/img/clients/2.webp"
+    },
+    {
+      "id": 3,
+      "imgSrc": "/img/clients/3.webp"
+    },
+    {
+      "id": 4,
+      "imgSrc": "/img/clients/4.webp"
+    },
+    {
+      "id": 5,
+      "imgSrc": "/img/clients/5.webp"
+    },
+    {
+      "id": 6,
+      "imgSrc": "/img/clients/6.webp"
+    },
+    {
+      "id": 7,
+      "imgSrc": "/img/clients/7.webp"
+    },
+    {
+      "id": 8,
+      "imgSrc": "/img/clients/8.webp"
+    },
+    {
+      "id": 9,
+      "imgSrc": "/img/clients/9.webp"
+    },
+    {
+      "id": 10,
+      "imgSrc": "/img/clients/10.webp"
+    }
+
+
+  ]
+}

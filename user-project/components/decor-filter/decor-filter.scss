@@ -1,0 +1,53 @@
+#filter {
+  position: relative;
+  height: auto;
+  width: 100%;
+  max-width: 228px;
+  margin-top: calc(17px + 33.8px);
+  padding: 6px 12px 12px 12px;
+  font-size: 0.875rem;
+  color: rgb(100, 114, 126);
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media only screen and (max-width: 767px) {
+    &.is-sidebar{
+      margin-top: 0;
+    }
+  }
+
+}
+
+#filter h2 {
+  color: rgb(0, 19, 36);
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1.935;
+  margin-bottom: 4px;
+}
+
+#colorGrid{
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  .color-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    width: 46px;
+    span{
+      width: 46px!important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 20px!important;
+      height: 20px!important;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+}

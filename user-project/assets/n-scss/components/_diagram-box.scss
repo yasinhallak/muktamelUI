@@ -1,0 +1,257 @@
+.diagram-box {
+  background: #fff;
+  &.without-contact {
+    .contact-us {
+      display: none !important;
+    }
+  }
+  &.grid-view {
+    .special-icon{
+      top: -6px;
+      left:0;
+    }
+    .contact-us {
+      display: none !important;
+    }
+    &.with-contact {
+      .contact-us {
+        display: flex !important;
+      }
+      .diagram-box_footer {
+        display: none !important;
+      }
+      .diagram-props {
+        flex-wrap: wrap;
+
+        .views {
+          width: 100%;
+          margin-bottom: 8px;
+        }
+      }
+      .diagram-type {
+        font-size: 13px;
+      }
+      .diagram-dimension {
+        font-size: 12px;
+      }
+      .diagram-props {
+        font-size: 11px;
+      }
+    }
+  }
+  &.grid-view-small {
+    width: 100%;
+    position: relative;
+    .child-3-2{
+      padding:0 !important;
+    }
+    .diagram-type {
+      font-size: 13px;
+
+    }
+    .diagram-dimension {
+      margin:0 !important;
+      font-size: 12px;
+    }
+    .diagram-props {
+      font-size: 14px;
+    }
+    .contact-us {
+      display: none !important;
+    }
+    .views {
+      display: none !important;
+    }
+    .diagram-author_logo{display: none}
+    .diagram-box_footer {
+      border: none !important;
+      .diagram-author {
+        border: none !important;
+        .diagram-author_title {
+          display: none !important;
+        }
+        .diagram-author_logo {
+          width: 55px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &.list-view {
+    display: flex;
+    font-size: 12px;
+    border: 1px solid #dadada;
+
+    .diagram-box_body {
+      padding: 0.5rem;
+    }
+    .diagram-box_header {
+      width: 250px;
+    }
+
+    .special-icon {
+      transform: scale(0.8) translate(-22px, -22px);
+    }
+    .heart-icon {
+      font-size: 21px;
+      padding: 0 0px;
+    }
+    .diagram-image {
+      padding: 0 !important;
+    }
+    .diagram-author {
+      .diagram-author_title {
+        display: none !important;
+      }
+    }
+    .diagram-box_footer {
+      margin-right: auto;
+      display: flex;
+      align-items: flex-end;
+    }
+    .diagram-props {
+      flex-wrap: wrap;
+      .views {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .features {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    padding: 1px 0;
+    min-width: 45px;
+
+    li {
+      font-size: 15px;
+      line-height: 1;
+      margin: 0 7.5px;
+
+      i {
+        font-size: 16px;
+      }
+
+      &:not(:last-child) {
+        margin-left: 2px;
+      }
+
+      &.icon-deg360 {
+        width: 30px;
+        height: 20px;
+
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+
+      width: 20px;
+      height: 20px;
+      padding: 2px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  &_header {
+    .heart-icon {
+      color: #ffffff;
+      font-size: 30px;
+      padding: 0px 10px;
+      &.isFavorite{
+        color: red;
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+      }
+    }
+    .photo_count{
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      z-index: 90;
+      border-radius: 5px 5px 5px 5px;
+      -moz-border-radius: 5px 5px 5px 5px;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border: 2px solid #ffffff;
+      padding-left: 5px;
+      padding-right: 5px;
+      color: #fff;
+      direction: ltr;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &_body {
+    .diagram-props{
+      color: #737373;
+    }
+    .diagram-type {
+      color: #0089fe;
+      font-size: 15px;
+      padding: 3px 0;
+    }
+    .diagram-dimension {
+      color: #000;
+      padding: 3px 0;
+    }
+    .contact-us {
+      font-size: 11px;
+      color: $color_white;
+      li {
+        border-radius: 3px;
+        margin-left: 8px;
+        padding: 0px 8px;
+      }
+      a {
+        color: $color_white;
+        font-size: 9px;
+      }
+      .call-us-btn {
+        background: $color_red;
+      }
+      .email-btn {
+        background: $color_primary;
+      }
+      .whatsapp-btn {
+        background: $color_whatsapp;
+      }
+    }
+  }
+
+  &_footer {
+    border-top: 1px solid #e2e6eb;
+    .diagram-author {
+      &_title {
+        span {
+          color: #333;
+          font-weight: 700;
+          font-size: 11px;
+          margin-left: 8px;
+          border-left: 1px solid #e2e6eb;
+          line-height: 1.4;
+        }
+        h4 {
+          color: #0089fe;
+          font-size: 11px;
+          line-height: 1.4;
+        }
+      }
+      &_logo {
+        flex-shrink: 0;
+        width: 75px;
+      }
+    }
+  }
+
+  #selectStreetButton{
+    border: unset;
+  }
+}

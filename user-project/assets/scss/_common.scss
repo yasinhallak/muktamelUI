@@ -1,0 +1,217 @@
+// TODO: Deprecated
+
+$color_ground : #e8e8e8;
+$color_primary :#0089fe;
+$color_prim: #1b95e0;
+$color_danger :#d92227;
+$color_dngr:#f20d0d;
+$color_dark :#001324;
+$color_gry : #e9ecef;
+$color_scses: #1ebe3c;
+$color_white: #fff;
+/*
+$color_secondary
+$color_success
+$color_warning
+$color_info
+$color_light
+*/
+$color_input_pg: #fcfcfc;
+$color_2: #001324;
+$color_3: #f3f3f3;
+$color_4: #596268;
+$color_5: #7c8388;
+$bold: bold;
+
+@import url('https://fonts.googleapis.com/earlyaccess/droidarabickufi.css');
+
+
+//@font-face {
+//  font-family: 'AL-Mateen';
+//  src: url("../fonts/AL-Mateen.woff2") format("woff2"), url("../fonts/AL-Mateen.woff") format("woff");
+//  font-weight: normal;
+//  font-style: normal;
+//  font-display: swap; }
+
+
+$font: 'Droid Arabic Kufi', sans-serif;;
+$font_bold: 'Droid Arabic Kufi Bold', sans-serif;;
+$al_mateen_font: 'AL-Mateen', sans-serif;;
+
+.font-size-8px{ font-size: 0.5rem !important;}
+.font-size-9px{ font-size: 0.563rem !important;}
+.font-size-10px{ font-size: 0.625rem !important;}
+.font-size-11px{ font-size: 0.6875rem !important;}
+.font-size-12px{ font-size: 0.75rem !important;}
+.font-size-13px{ font-size: 0.8125rem !important;}
+.font-size-14px{ font-size: 0.875rem !important;}
+.font-size-15px{ font-size: 0.9375rem !important;}
+.font-size-16px{ font-size: 1rem !important;}
+.font-size-17px{ font-size: 1.0625rem !important;}
+.font-size-18px{ font-size: 1.125rem !important;}
+.font-size-19px{ font-size: 1.1875rem !important;}
+.font-size-20px{ font-size: 1.25rem !important;}
+.font-size-21px{ font-size: 1.3125rem !important;}
+.font-size-22px{ font-size: 1.375rem !important;}
+.font-size-23px{ font-size: 1.4375rem !important;}
+.font-size-24px{ font-size: 1.5rem !important;}
+.font-size-25px{ font-size: 1.5625rem !important;}
+.font-size-26px{ font-size: 1.625rem !important;}
+.font-size-27px{ font-size: 1.6875rem !important;}
+.font-size-28px{ font-size: 1.75rem !important;}
+.font-size-29px{ font-size: 1.8125rem !important;}
+.font-size-30px{ font-size: 1.875rem !important;}
+.font-size-94px{ font-size: 5.875rem !important;}
+
+.adrs-line{
+  .label-adrs {
+      width: 14rem;
+      font-weight: bold;
+      color: #000;
+      position: relative;
+  }
+  .label-adrs:before,
+  .label-adrs:after {
+      content: "";
+      display: flex;
+      width: 100%;
+      height: 0.18rem !important;
+      background: $color_prim;
+      position: absolute;
+      top: 50%;
+      padding-top: 1.5px;
+      padding-bottom: 1.5px;
+  }
+
+  .label-adrs:before {
+      left:  14rem;
+  }
+
+  .label-adrs:after {
+      right: 14rem;
+  }
+}
+
+@media (max-width: 374.5px) {
+  .adrs-line{
+    .label-adrs:before,
+    .label-adrs:after {
+        width: 1rem;
+        height: 0.094rem;
+    }
+  }
+}
+
+@media (min-width: 374.6px) {
+  .adrs-line{
+    .label-adrs:before,
+    .label-adrs:after {
+        width: 3rem;
+        height: 0.094rem;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .adrs-line{
+    .label-adrs:before,
+    .label-adrs:after {
+        width: 8rem;
+        height: 0.094rem;
+    }
+  }
+}
+
+@media (min-width: 767.98px) {
+  .adrs-line{
+    .label-adrs:before,
+    .label-adrs:after {
+        width: 13.5rem;
+        height: 0.094rem;
+    }
+  }
+
+}
+
+@media (min-width: 991.98px) {
+  .adrs-line{
+    .label-adrs:before,
+    .label-adrs:after {
+        width: 13.5rem;
+        height: 0.094rem;
+    }
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .adrs-line{
+    .label-adrs:before,
+    .label-adrs:after {
+        width: 17.5rem;
+        height: 0.094rem;
+    }
+  }
+
+}
+.w-30{
+  width: 30% !important;
+}
+.w-35{
+  width: 35% !important;
+}
+
+// // Added by omar fouda
+.form-group{
+  margin-bottom: 0.4rem;
+  width: 100%;
+  .validation-message {
+    width: 100%;
+    font-size: 0.70rem;
+    color: red;
+  }
+  .adrs-line-two {
+    width: 14rem;
+    font-weight: bold !important;
+    color: #1b95e0 !important;
+    position: relative;
+  }
+  .form-control{
+    border-color: $color_5;
+    min-height: 2rem;
+    max-height: 2rem;
+    font-size: .9rem;
+  }
+  .text-danger{
+    margin-right: 3px;
+  }
+}
+
+.hard-shadow{
+  box-shadow: 3.5px 3.5px 0 0 #999999;
+}
+
+
+html .scroll-to-top{
+  transition: opacity 0.3s;
+  padding: 0;
+  bottom: 7px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  position: fixed;
+  left: 7px;
+  text-decoration: none;
+  z-index: 1040;
+  font-size: 0.8em;
+  background-color: $color_dark;
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color_primary;
+}
+.bg-color-muktamel{
+  background-color:$color_dark;
+}

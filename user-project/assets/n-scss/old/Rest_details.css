@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.calc_row .calc_right_button ,.calc_row .calc_left_button{
+	width:9%
+
+}
+.list_realestate .post-content .item_price{
+	text-align:right;
+	font-size: 18px
+
+}
+.list_realestate .show_item{
+	margin-bottom:10px	!important ;
+	padding-bottom:10px;
+
+}
+.fixed_height{
+	height:30px
+
+}
+/*//////////////// for all modal*/
+.modal-content {
+	border-radius: 0rem !important;
+
+}
+.modal-content .close{
+	width:30px;
+	height:30px;
+	background-color:#fff;
+	color:#1192ff;
+	left:0px !important;
+	top:0px !important;
+	opacity:1;
+	outline: none;
+}
+.modal-content .close:hover{
+	opacity: .5;
+}
+.modal-content .title{
+
+	color:#001324;
+	margin-top:-10px;
+	text-align:right;
+	font-size: 1.2em;
+}
+.modal-content .tabs.tabs-bottom .nav-tabs li.active .nav-link{
+	background-color:#d92228;
+	color:#fff !important;
+
+}
+.rest_calculater .calc_inp:focus , .rest_calculater button{
+
+	outline: none;
+}
+.modal-dialog
+{
+	max-width:400px;
+
+}
+.sw_out {
+    width: 220px !important;
+    height: 31px !important;
+}

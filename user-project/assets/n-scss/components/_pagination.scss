@@ -1,0 +1,39 @@
+.b-pagination-pills  {
+  .page-item{
+    font-weight: bold;
+    &.active{
+      .page-link{
+        background-color: $color_blue !important;
+        border-color: $color_blue !important;
+      }
+    }
+    &:first-child{
+      margin-left: 0.25rem!important;
+    }
+    .page-link{
+      padding: 6px 8px;
+      border: 1px solid #a0a0a0;
+      font-weight: bold;
+      border-radius: 6px !important;
+    }
+  }
+.btn-pagination {
+  &.disabled{
+    span.page-link{
+      padding: 6px 8px;
+      opacity: 0.6;
+      background-color: $color_blue !important;
+      color: #fff;
+      border-color: $color_blue !important;
+    }
+
+  }
+  button{
+    background-color: $color_blue !important;
+    color: #fff;
+    border-color: $color_blue !important;
+  }
+
+}
+
+}

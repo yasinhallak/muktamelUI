@@ -1,0 +1,479 @@
+.__Land__Info {
+  list-style: none;
+
+  div#Prop__Land__Info__Num {
+    height: 34px;
+    border-left: 0 !important;
+    border-color: #ced4da !important;
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+    border-top-left-radius: 0rem !important;
+    border-bottom-left-radius: 0rem !important;
+
+    span {
+      color: #495057;
+    }
+  }
+
+  .arrow-down {
+    .input-group-text {
+      background-color: #fff;
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-color: #ced4da;
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+    }
+
+    .icons {
+      color: $color_5;
+    }
+  }
+
+  .Prop__More__Menu {
+    z-index: 2;
+    background-color: #fff;
+
+    .Prop__Details__Info {
+      label {
+        color: $color_dark;
+        font-size: 12px;
+      }
+    }
+
+    .invalid-state{
+      border-color: red!important;
+    }
+
+    .container-fluid {
+      .land-axes {
+        .header {
+          height: 78px;
+        }
+
+        max-width: 340px;
+        margin: auto;
+
+        .parent {
+          position: relative;
+          margin-bottom: 20px;
+
+          p.text {
+            line-height: 2.7;
+            font-size: 18px;
+            font-weight: $bold;
+            color: #00000096;
+            margin-bottom: 0;
+          }
+
+          .input {
+            position: relative;
+            position: relative;
+            border: 1px solid $color_4;
+            border-radius: 5px;
+            color: $color_4;
+            background-color: $color_white;
+
+            input {
+              font-size: 12px;
+              height: 1.563rem;
+              text-align: center;
+              font-weight: bold;
+              border: 0px solid;
+              width: 96%;
+              margin-right: 5px;
+              color: $color_4;
+            }
+
+            span.plus {
+              background-color: $color_white;
+              position: absolute;
+              left: 0;
+              height: 1.563rem;
+              border-right: 1px solid;
+              border-bottom-left-radius: 4.5px;
+              border-top-left-radius: 4.5px;
+              line-height: 25px;
+              padding: 0 15px;
+              z-index: 1;
+              cursor: pointer;
+              color: $color_4;
+              font-weight: bold;
+              font-size: 15px;
+            }
+
+            span.plus:hover {
+              background-color: $color_primary;
+              color: #fff;
+            }
+
+            span.metre,
+            span.Sub_metre {
+              position: absolute;
+              height: 1.563rem;
+              line-height: 25px;
+              padding: 0 15px;
+              font-weight: bold;
+              color: $color_4;
+              font-size: 12px;
+            }
+
+            span.metre {
+              left: 46px;
+            }
+
+            span.Sub_metre {
+              left: 34px;
+            }
+
+            span.minus {
+              background-color: $color_white;
+              position: absolute;
+              right: 0;
+              top: 0;
+              height: 1.563rem;
+              border-left: 1px solid;
+              border-bottom-right-radius: 4.5px;
+              border-top-right-radius: 4.5px;
+              line-height: 25px;
+              padding: 0 15px;
+              z-index: 1;
+              cursor: pointer;
+              color: $color_4;
+              font-weight: bold;
+              font-size: 15px;
+            }
+
+            span.minus:hover {
+              background-color: $color_primary;
+              color: #fff;
+            }
+          }
+        }
+
+        .result {
+          margin-top: 15px;
+
+          li {
+            font-size: 13px;
+            @media only screen and (max-width: 360px) {
+              font-size: 10px;
+            }
+            margin-left: 5px;
+            color: $color_4;
+
+            &:nth-of-type(2) {
+              font-size: 20px;
+              @media only screen and (max-width: 360px) {
+                font-size: 18px;
+              }
+              color: $color_primary;
+            }
+
+            &:nth-of-type(3) {
+              color: $color_primary;
+              font-size: 9px;
+            }
+          }
+        }
+      }
+
+      .Prop__Area__Height,
+      .Prop__Area__Width {
+        input {
+          height: 1.563rem;
+          width: 9rem;
+          border-radius: 0.25rem !important;
+          border-color: #7c8388;
+        }
+      }
+
+      .Land__Dist {
+        height: 1.563rem;
+
+        span {
+          font-size: 12px;
+          color: $color_dark;
+        }
+      }
+
+      .Streets__Around {
+        h5.Prop__Details {
+          color: $color_primary;
+        }
+
+        .btn-group-toggle {
+          height: 2rem;
+
+          label.btn-outline {
+            border: 1px solid #7c8388;
+            color: #7c8388;
+            font-size: 22px;
+            height: 100%;
+            padding: 0;
+          }
+
+          label.btn-outline:first-child {
+            border-top-right-radius: 0.4rem !important;
+            border-bottom-right-radius: 0.4rem !important;
+          }
+
+          label.btn-outline:last-child {
+            border-top-left-radius: 0.4rem !important;
+            border-bottom-left-radius: 0.4rem !important;
+          }
+
+          label.btn-outline:hover {
+            border: none;
+            color: #fff;
+            background-color: $color_primary;
+          }
+        }
+
+        .STR_AR {
+          select,
+          input {
+            width: 100%;
+            height: 1.75rem;
+            border-radius: 0.25rem !important;
+            border-color: #7c8388;
+          }
+        }
+      }
+    }
+  }
+}
+
+.Prop__Land__Info {
+  text-decoration: none;
+
+  button.btn-more {
+    border-color: $color_primary;
+    border-radius: 0.25rem !important;
+    background-color: $color_primary;
+    color: #fff;
+  }
+}
+
+.container-fluid {
+  .land-axes {
+    .header {
+      height: 78px;
+    }
+
+    max-width: 340px;
+    margin: auto;
+
+    .parent {
+      position: relative;
+      margin-bottom: 20px;
+
+      p.text {
+        line-height: 2.7;
+        font-size: 18px;
+        font-weight: $bold;
+        color: #00000096;
+        margin-bottom: 0;
+      }
+
+      .input {
+        position: relative;
+        position: relative;
+        border: 1px solid $color_4;
+        border-radius: 5px;
+        color: $color_4;
+        background-color: $color_white;
+
+        input {
+          font-size: 12px;
+          height: 1.563rem;
+          text-align: center;
+          font-weight: bold;
+          border: 0px solid;
+          width: 96%;
+          margin-right: 5px;
+          color: $color_4;
+        }
+
+        span.plus {
+          background-color: $color_white;
+          position: absolute;
+          left: 0;
+          height: 1.7rem;
+          border-right: 1px solid;
+          border-bottom-left-radius: 4.5px;
+          border-top-left-radius: 4.5px;
+          line-height: 25px;
+          padding: 0 15px;
+          z-index: 1;
+          cursor: pointer;
+          color: $color_4;
+          font-weight: bold;
+          font-size: 15px;
+        }
+
+        span.plus:hover {
+          background-color: $color_primary;
+          color: #fff;
+        }
+
+        span.metre,
+        span.Sub_metre {
+          position: absolute;
+          height: 1.7rem;
+          line-height: 25px;
+          padding: 0 15px;
+          font-weight: bold;
+          color: $color_4;
+          font-size: 12px;
+        }
+
+        span.metre {
+          left: 46px;
+        }
+
+        span.Sub_metre {
+          left: 34px;
+        }
+
+        span.minus {
+          background-color: $color_white;
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 1.7rem;
+          border-left: 1px solid;
+          border-bottom-right-radius: 4.5px;
+          border-top-right-radius: 4.5px;
+          line-height: 25px;
+          padding: 0 15px;
+          z-index: 1;
+          cursor: pointer;
+          color: $color_4;
+          font-weight: bold;
+          font-size: 15px;
+        }
+
+        span.minus:hover {
+          background-color: $color_primary;
+          color: #fff;
+        }
+      }
+    }
+
+    .result {
+      margin-top: 15px;
+
+      li {
+        font-size: 13px;
+        margin-left: 5px;
+        color: $color_4;
+
+        &:nth-of-type(2) {
+          font-size: 20px;
+          color: $color_primary;
+        }
+
+        &:nth-of-type(3) {
+          color: $color_primary;
+          font-size: 9px;
+        }
+      }
+    }
+  }
+
+  .Prop__Area__Height,
+  .Prop__Area__Width {
+    input {
+      height: 1.563rem;
+      width: 9rem;
+      border-radius: 0.25rem !important;
+      border-color: #7c8388;
+    }
+  }
+
+  .Land__Dist {
+    height: 1.563rem;
+
+    span {
+      font-size: 12px;
+      color: $color_dark;
+    }
+  }
+
+  .Streets__Around {
+    h5.Prop__Details {
+      color: $color_primary;
+    }
+
+    .btn-group-toggle {
+      height: 2rem;
+
+      label.btn-outline {
+        border: 1px solid #7c8388;
+        color: #7c8388;
+        font-size: 22px;
+        height: 100%;
+        padding: 0;
+      }
+
+      label.btn-outline:first-child {
+        border-top-right-radius: 0.4rem !important;
+        border-bottom-right-radius: 0.4rem !important;
+      }
+
+      label.btn-outline:last-child {
+        border-top-left-radius: 0.4rem !important;
+        border-bottom-left-radius: 0.4rem !important;
+      }
+
+      label.btn-outline:hover {
+        border: none;
+        color: #fff;
+        background-color: $color_primary;
+      }
+    }
+
+    .STR_AR {
+      select,
+      input {
+        width: 100%;
+        height: 1.75rem;
+        border-radius: 0.25rem !important;
+        border-color: #7c8388;
+      }
+    }
+  }
+}
+
+
+.select-street .btn-group-toggle .btn-outline {
+  border-radius: 0;
+}
+.select-street .btn-outline:hover {
+  border: 1px solid #7c8388 !important;
+}
+.select-street .btn {
+  font-size: 12px;
+  padding: 7px 14px;
+  width: 100px;
+}
+.select-street .btn.btn-filter {
+  background: #fff !important;
+  color: #55616c !important;
+  border: 0;
+}
+
+.select-street .btn.btn-apply {
+  background: #0089fe !important;
+  color: #ffffff !important;
+}
+
+.select-street{
+      .dropdown__Menu__Props {
+        width: auto!important;
+  }
+}
+
+

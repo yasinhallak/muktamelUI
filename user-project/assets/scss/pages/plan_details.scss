@@ -1,0 +1,293 @@
+.main-detail-section{
+  .sidebar{
+    .agent_box{
+      .com-btn{
+        background-color: var(--red-deep) !important;
+      }
+    }
+  }
+
+  .company-information .contact-us-768 li a{
+    background: var(--red-deep);
+  }
+
+.build_calc{
+  .inside_type{
+    box-shadow: 0px 0px 0px -0px ;
+    @media (max-width: 639px) {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+  .dropdown__Menu__Props{
+    box-shadow: 0px 0px 31px -4px rgba(0, 0, 0, 0.62);
+  }
+}
+
+#my-collapse3{
+  .table-sm{
+    td{
+      padding:7px 0 !important;
+    }
+  }
+}
+
+.margint_top_m {
+  z-index: 50;
+}
+
+.color-gry-blue {
+  color: #818C95 !important;
+}
+.modal-dialog {
+  max-width: 400px;
+}
+
+.inside_type{
+  ._button_in{
+    margin-top:7px;
+    margin-bottom:7px;
+    .inner_type{
+      //width:100%;
+      padding:0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width:100px;
+      width: 100px;
+    }
+    h5{font-size:14px !important;line-height: 27px};
+    h4{font-size:24px !important;font-weight:bold;line-height: 28px};
+  }
+}
+
+.list_realestate .show_item {
+  margin-bottom: 10px !important;
+  padding-bottom: 10px;
+}
+
+
+.in_selected h4{
+
+  color:#fff;
+}
+
+.plan_details_mobile  .toggle > label{
+
+  padding: 6px 0px 6px 0px !important;
+  border-right:0px !important;
+  border-bottom:1px solid #eee !important
+
+}
+
+.plan_details_mobile  .toggle > .toggle-content > p {
+  padding:0px !important;
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+
+.owl-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 25%;
+  right: 25%;
+}
+
+.show_hide_details{
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.collapsed{
+  .mx-icon-chevron-up-light, .fa-angle-up,.feature-hide{display: none}
+}
+.not-collapsed{
+  .mx-icon-chevron-down-light, .fa-angle-down,.feature-show{display: none}
+}
+  .page-header-modern{height: 150px !important;}
+
+@media (max-width: 639px) {
+  .collapsed::before{
+    transform: rotate(135deg) translate3d(0, 50%, 0);
+  }
+  .slider-home{margin:-35px 0px 0 0px !important;height:auto}
+  #app22{
+    //margin: 15px;
+    /*li{
+      width: 27.8vw;
+      height: 40px;
+    }*/
+  }
+
+  .cost-section{
+    padding:0 15px;
+    .cost-row{
+      max-width:360px;
+      margin-right:auto;
+      margin-left:auto;
+    }
+  }
+  .cost-col{
+    padding:0 5px;
+  }
+}
+
+.deails_block_payments{
+  tbody {
+    th {
+      font-size: 14px;
+    }
+    td{
+      font-size: 16px;
+    }
+  }
+}
+
+
+::v-deep #selectStreetButton{
+  border:unset !important;
+}
+#more_icon.mx-icon-chevron-down-light{
+  //display:block;
+}
+
+.collapsed{
+  .mx-icon-chevron-down{display:block;}
+  .mx-icon-chevron-up{display:none;}
+}
+.not-collapsed{
+  .mx-icon-chevron-down{display:none;}
+  .mx-icon-chevron-up{display:block;}
+}
+
+.deails_block_payments{
+  border: 3px solid #989898 !important;
+  border-radius: 10px !important;
+  th{
+    width:120px
+  }
+}
+
+.cost-big{
+  max-width:250px;
+  @media (max-width: 640px) {
+    max-width:260px;
+  }
+  margin-left:auto;
+  margin-right:auto;
+  padding: 0;
+  .calc_resault_box{
+    margin-left:0;
+    margin-right:0;
+    box-shadow: 0 5px 30px #00000066;
+  }
+}
+
+.price-table{
+  border-collapse: collapse;
+  tr{
+    //border-bottom:1px solid #000;
+  }
+}
+
+.location li{
+font-size: 14px;
+&:not(:last-child):after{content: "-" !important;font-weight:bold}
+}
+
+.contact-us{
+  a{font-weight:normal}
+}
+
+  .table-hover{
+    td{width:120px}
+    td.td-big{width:250px}
+  }
+  .table-big{
+    .col-muk-sm-4{
+     padding:0 25px !important;
+    }
+  }
+
+  ::v-deep #select-street{
+    .input-group{
+      height: 41px;
+      width: 152px;
+    }
+    #Prop__Land__Info__Num{
+      height: 42px;
+    }
+  }
+
+@media (min-width: 768px) {
+.container-0-15{padding:0 15px}
+  .big-screen-buttons{
+    display:flex;
+    justify-content: center;
+    li{
+      width: 155px !important;
+      padding: 0 5px;
+      a{
+        background:#D92227 !important;
+        box-shadow:unset !important;
+      }
+    }
+  }
+  .small-screen-buttons{display:none}
+  .mobile-box {
+    //padding: 12px 18px 13px 20px;
+    //.logo {
+    //  margin: 0;
+    //}
+  }
+}
+
+@media (max-width: 767px) {
+  .big-col {padding:0}
+  .big-screen-buttons{display:none}
+  .small-screen-buttons{display:flex}
+}
+
+@media (min-width: 960px) {
+  .price-section {
+    padding-inline-end:6%
+  }
+}
+
+@media (min-width: 960px) {
+  .margint_top_m{
+   margin-top:-165px
+  }
+}
+
+@media (max-width: 767px) and (min-width: 640px) {
+  .slider-home {
+    margin:0 -15px
+  }
+  .cost-col {
+    width: 346px;
+    min-width: 346px;
+  }
+}
+
+@media (max-width: 639px) {
+  .mobile-table th{
+    width:125px;
+    vertical-align: middle;
+  }
+  .calc_resault_box{
+    width:250px;
+    height:160px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 5px 30px #00000066;
+  }
+}
+}

@@ -1,0 +1,59 @@
+.help-page {
+  background: #fff;
+  min-height: calc(100vh - 335px);
+
+  .page-title {
+    color: #0089FE;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  a {
+    color: #0089FE;
+  }
+
+
+  ::v-deep .form-group {
+    margin-bottom: 20px;
+
+    label {
+      color: #001324 !important;
+      margin-bottom: 5px !important;
+      font-size: 16px;
+    }
+
+    input {
+      border: 1px solid #70707080 !important;
+      max-height: none !important;
+      height: 38px !important;
+    }
+
+    textarea.form-control {
+      height: auto !important;
+      max-height: none !important;
+      border: 1px solid #70707080 !important;
+    }
+  }
+
+  button {
+    width: 160px;
+    height: 35px;
+    background: #0089FE;
+    border-radius: 5px;
+    font: normal normal bold 16px/31px Droid Arabic Kufi;
+    color: #FFFFFF;
+    border: none;
+    box-shadow: none;
+  }
+
+
+
+  .help-form{
+    margin-left:-10px;
+    margin-right:-10px
+  }
+}

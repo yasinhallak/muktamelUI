@@ -1,0 +1,13 @@
+#login___BV_modal_outer_{
+  z-index: 1050 !important;
+}
+
+.home-header{
+  .top-nav{
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+@import "../shared-style/header-shared";
+

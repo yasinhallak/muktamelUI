@@ -1,0 +1,298 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "العقارات",
+      "path": "/real-estates",
+      "children": [
+        {
+          "id": 11,
+          "name": "ابحث عن عقار",
+          "path": "/",
+          "children": [
+            {
+              "id": 111,
+              "name": "للبيع",
+              "path": "/real-estates?searchQuery={\"dealType\":5}"
+            },
+            {
+              "id": 112,
+              "name": "للإيجار",
+              "path": "/real-estates?searchQuery={\"dealType\":6}"
+            },
+            {
+              "id": 113,
+              "name": "تجاري للبيع",
+              "path": "/real-estates?searchQuery={\"dealType\":5,\"commertialRealstateType\":[1,5,9,11,12,13,14,15,16,17,18,19,20]}"
+            },
+            {
+              "id": 114,
+              "name": "تجاري للإيجار",
+              "path": "/real-estates?searchQuery={\"dealType\":6,\"commertialRealstateType\":[1,5,9,11,12,13,14,15,16,17,18,19,20]}"
+            },
+            {
+              "id": 115,
+              "name": "المزادات العقارية",
+              "path": "/real-estates?searchQuery={\"dealType\":11}"
+            }
+          ]
+        },
+
+        {
+          "id": 13,
+          "name": "ماذا يقدم لك مكتمل؟",
+          "path": "/",
+          "children": [
+            {
+              "id": 131,
+              "name": "البحث عن عقارات",
+              "path": "/blog/ابحث-عن-عقارك/"
+            },
+            {
+              "id": 132,
+              "name": "البناء الذاتي",
+              "path": "/blog/البناء-الذاتي/"
+            },
+            {
+              "id": 133,
+              "name": "التصوير العقاري",
+              "path": "/blog/التصوير-العقاري/"
+            },
+            {
+              "id": 134,
+              "name": "التمويل العقاري",
+              "path": "/blog/التمويل-العقاري/"
+            },
+            {
+              "id": 135,
+              "name": "المنبه العقاري",
+              "path": "/blog/المنبه-العقاري/"
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "name": "انضم الينا",
+          "path": "/",
+          "children": [
+            {
+              "id": 141,
+              "name": "مكتب عقاري",
+              "path": "/blog/المكتب-العقاري/"
+            },
+            {
+              "id": 142,
+              "name": "مطور عقاري",
+              "path": "/blog/المطور-العقاري/"
+            },
+            {
+              "id": 143,
+              "name": "وكيل مزادات",
+              "path": "/blog/وكيل-المزادات-العقارية/"
+            },
+            {
+              "id": 144,
+              "name": "مصور عقاري",
+              "path": "/blog/المصور-العقاري/"
+            },
+            {
+              "id": 144,
+              "name": "مقيّم عقاري",
+              "path": "/blog//المقيم-العقاري/"
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "name": "ابحث عن..",
+          "path": "/",
+          "children": [
+            {
+              "id": 151,
+              "name": "مكتب عقاري",
+              "path": "/agencies?searchQuery={\"type\":1,\"sortColumn\":2}"
+            },
+            {
+              "id": 152,
+              "name": "مطور عقاري",
+              "path": "/agencies?searchQuery={\"type\":2}"
+            },
+            {
+              "id": 153,
+              "name": "وكيل مزادات",
+              "path": "/agencies?searchQuery={\"type\":15}"
+            },
+            {
+              "id": 154,
+              "name": "مصور عقاري",
+              "path": "/agencies?searchQuery={\"type\":5}"
+            },
+            {
+              "id": 155,
+              "name": "مقيّم عقاري",
+              "path": "/agencies?searchQuery={\"type\":6}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "الهندسة والبناء",
+      "path": "/",
+      "children": [
+        {
+          "id": 21,
+          "name": "ابحث عن ",
+          "path": "/plans",
+          "children": [
+            {
+              "id": 211,
+              "name": "مخطط هندسي",
+              "path": "/plans"
+            },
+            {
+              "id": 212,
+              "name": "مكتب هندسي",
+              "path": "/agencies?searchQuery={\"type\":3}"
+            },
+            {
+              "id": 214,
+              "name": "مقاول",
+              "path": "/agencies?searchQuery={\"type\":7}"
+            },
+            {
+              "id": 215,
+              "name": "شركات الصيانة ونقل المفروشات",
+              "path": "/agencies?searchQuery={\"type\":14}"
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "name": "خدمات هندسية",
+          "path": "/",
+          "children": [
+            {
+              "id": 221,
+              "name": "حاسبة تكاليف البناء",
+              "path": "/plans/calcWizard"
+            },
+            {
+              "id": 222,
+              "name": "معرض الديكور",
+              "path": "/decor"
+            },
+            {
+              "id": 223,
+              "name": "كيف تبني منزلك",
+              "path": "/blog/البناء-الذاتي/"
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "name": "انضم إلينا",
+          "path": "/",
+          "children": [
+            {
+              "id": 231,
+              "name": "مكتب هندسي",
+              "path": "/blog/المكتب-الهندسي/"
+            },
+            {
+              "id": 233,
+              "name": "مقاول",
+              "path": "/blog/مقاول-بناء/"
+            },
+            {
+              "id": 234,
+              "name": "شركة صيانة ونقل مفروشات",
+              "path": "/agencies?searchQuery={\"type\":14}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "المشاريع",
+      "path": "/",
+      "children": [
+        {
+          "id": 31,
+          "name": "ابحث عن ",
+          "path": "/",
+          "children": [
+            {
+              "id": 311,
+              "name": "عقارات جديدة للبيع",
+              "path": "/real-estates?searchQuery={\"dealType\":5,\"saleType\":[2]}"
+            },
+            {
+              "id": 312,
+              "name": "عقارات جديدة للإيجار",
+              "path": "/real-estates?searchQuery={\"dealType\":6,\"saleType\":[2]}"
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "name": "هل أنت مطور عقاري ؟",
+          "path": "/",
+          "children": [
+            {
+              "id": 321,
+              "name": "انضم إلى مطور عقاري",
+              "path": "/blog/المطور-العقاري/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "التمويل العقاري",
+      "path": "/",
+      "children": [
+        {
+          "id": 41,
+          "name": "التمويل العقاري",
+          "path": "/",
+          "children": [
+            {
+              "id": 411,
+              "name": "ابحث عن تمويل",
+              "path": "/mortgage",
+              "methodName": ""
+            },
+            {
+              "id": 412,
+              "name": "حاسبة التمويل العقاري",
+              "path": "/mortgage",
+              "methodName": "authMortgage"
+            },
+            {
+              "id": 413,
+              "name": "ملاءتي المالية",
+              "path": "/mortgage",
+              "methodName": ""
+            },
+            {
+              "id": 414,
+              "name": "الشراء أم التأجير؟",
+              "path": "/mortgage",
+              "methodName": ""
+            },
+            {
+              "id": 415,
+              "name": "معلومات مهمة في التمويل العقاري",
+              "path": "/mortgage",
+              "methodName": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

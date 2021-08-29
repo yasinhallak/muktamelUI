@@ -1,0 +1,189 @@
+[
+  {
+    "name": "404___ar",
+    "path": "/404",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\index.vue",
+    "_name": "_35fa5882"
+  },
+  {
+    "name": "about-us___ar",
+    "path": "/about-us",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\about-us\\\\index.vue",
+    "chunkName": "pages/about-us/index",
+    "_name": "_b8a2233e"
+  },
+  {
+    "name": "agencies___ar",
+    "path": "/agencies",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\agencies\\\\index.vue",
+    "chunkName": "pages/agencies/index",
+    "_name": "_392166bc"
+  },
+  {
+    "name": "agencies-request___ar",
+    "path": "/agencies-request",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\agencies-request\\\\index.vue",
+    "chunkName": "pages/agencies-request/index",
+    "_name": "_1a2c5c8c"
+  },
+  {
+    "name": "conditions___ar",
+    "path": "/conditions",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\conditions\\\\index.vue",
+    "chunkName": "pages/conditions/index",
+    "_name": "_50a44707"
+  },
+  {
+    "name": "contact___ar",
+    "path": "/contact",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\contact\\\\index.vue",
+    "chunkName": "pages/contact/index",
+    "_name": "_3275e5d6"
+  },
+  {
+    "name": "decor___ar",
+    "path": "/decor",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\decor\\\\index.vue",
+    "chunkName": "pages/decor/index",
+    "_name": "_bed9bd20"
+  },
+  {
+    "name": "help___ar",
+    "path": "/help",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\help\\\\index.vue",
+    "chunkName": "pages/help/index",
+    "_name": "_0fe3729e"
+  },
+  {
+    "name": "home___ar",
+    "path": "/home",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\index.vue",
+    "_name": "_35fa5882"
+  },
+  {
+    "name": "mortgage___ar",
+    "path": "/mortgage",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\mortgage\\\\index.vue",
+    "chunkName": "pages/mortgage/index",
+    "_name": "_2d86e3e3"
+  },
+  {
+    "name": "plans___ar",
+    "path": "/plans",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\plans\\\\index.vue",
+    "chunkName": "pages/plans/index",
+    "_name": "_0447096a"
+  },
+  {
+    "name": "privacy___ar",
+    "path": "/privacy",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\privacy\\\\index.vue",
+    "chunkName": "pages/privacy/index",
+    "_name": "_4680dcad"
+  },
+  {
+    "name": "profile___ar",
+    "path": "/profile",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\profile\\\\index.vue",
+    "chunkName": "pages/profile/index",
+    "_name": "_6c43f028"
+  },
+  {
+    "name": "projects___ar",
+    "path": "/projects",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\projects\\\\index.vue",
+    "chunkName": "pages/projects/index",
+    "_name": "_8a22ed76"
+  },
+  {
+    "name": "real-estates___ar",
+    "path": "/real-estates",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\real-estates\\\\index.vue",
+    "chunkName": "pages/real-estates/index",
+    "_name": "_9f7291f2"
+  },
+  {
+    "name": "register___ar",
+    "path": "/register",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\register\\\\index.vue",
+    "chunkName": "pages/register/index",
+    "_name": "_4755a108"
+  },
+  {
+    "name": "resetPassword___ar",
+    "path": "/resetPassword",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\resetPassword\\\\index.vue",
+    "chunkName": "pages/resetPassword/index",
+    "_name": "_2da7b9ab"
+  },
+  {
+    "name": "virtualTour___ar",
+    "path": "/virtualTour",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\virtualTour\\\\index.vue",
+    "chunkName": "pages/virtualTour/index",
+    "_name": "_2ab857d2"
+  },
+  {
+    "name": "cards-cases-plan___ar",
+    "path": "/cards-cases/plan",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\cards-cases\\\\plan\\\\index.vue",
+    "chunkName": "pages/cards-cases/plan/index",
+    "_name": "_44c085f3"
+  },
+  {
+    "name": "cards-cases-project___ar",
+    "path": "/cards-cases/project",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\cards-cases\\\\project\\\\index.vue",
+    "chunkName": "pages/cards-cases/project/index",
+    "_name": "_dd9429c2"
+  },
+  {
+    "name": "cards-cases-realestate___ar",
+    "path": "/cards-cases/realestate",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\cards-cases\\\\realestate\\\\index.vue",
+    "chunkName": "pages/cards-cases/realestate/index",
+    "_name": "_3656badc"
+  },
+  {
+    "name": "plans-calcWizard___ar",
+    "path": "/plans/calcWizard",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\plans\\\\calcWizard\\\\index.vue",
+    "chunkName": "pages/plans/calcWizard/index",
+    "_name": "_5100ea2b"
+  },
+  {
+    "name": "agencies-id___ar",
+    "path": "/agencies/:id",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\agencies\\\\_id\\\\index.vue",
+    "chunkName": "pages/agencies/_id/index",
+    "_name": "_b9148844"
+  },
+  {
+    "name": "plans-id___ar",
+    "path": "/plans/:id",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\plans\\\\_id\\\\index.vue",
+    "chunkName": "pages/plans/_id/index",
+    "_name": "_9ee7aea2"
+  },
+  {
+    "name": "real-estates-id___ar",
+    "path": "/real-estates/:id?",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\real-estates\\\\_id.vue",
+    "chunkName": "pages/real-estates/_id",
+    "_name": "_7b5661a2"
+  },
+  {
+    "name": "vt-id___ar",
+    "path": "/vt/:id?",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\vt\\\\_id.vue",
+    "chunkName": "pages/vt/_id",
+    "_name": "_2e0dda2e"
+  },
+  {
+    "name": "index___ar",
+    "path": "/",
+    "component": "C:\\\\MyWork\\\\muktamelUI\\\\user-project\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_35fa5882"
+  }
+]

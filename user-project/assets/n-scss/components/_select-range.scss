@@ -1,0 +1,194 @@
+.select-range {
+  height: 34px;
+  .input-group{
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+    font: normal normal normal 13px/25px 'Droid Arabic Kufi';
+    padding:0;
+    border:0;
+    outline: 0;
+    text-align: right;
+    .placeholder{
+      color:#777777
+    }
+    &:before {
+      position: absolute;
+      content: '\f078';
+      left: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      font: normal normal 700 11px/14px 'Font Awesome 5 Free';
+      color: #505050;
+      z-index: 1;
+    }
+    .form-control{
+      height: 100%;
+      padding-left:25px;
+      line-height: 1.5;
+      border: 1px solid #70707080 !important;
+
+    }
+  }
+
+}
+
+.select-range-dropdown-menu {
+  width: 100%;
+  box-shadow: 0 0 8px rgba(113, 113, 113, 0.7);
+  background: #fff;
+  overflow: hidden;
+  .filter-dropdown-menu-inner{
+    padding: 10px;
+    background: white;
+  }
+  //
+  //@include  ipad-down(){
+  //  right:auto;
+  //  left:0;
+  //  .filter-dropdown-menu-inner{
+  //    &::before {
+  //      left: 20px;
+  //      right: auto;
+  //    }
+  //  }
+  //}
+  //@include  mobile-down(){
+  //  right: auto;
+  //  left: -75px;
+  //  .filter-dropdown-menu-inner{
+  //    &::before {
+  //      right: 50%;
+  //    }
+  //  }
+  //}
+
+
+  .filter-section {
+    position: relative;
+
+    .select-box {
+      border-bottom: 1px solid #dedede;
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      span {
+        font-size: 13px;
+      }
+
+      select {
+        color: #7D858C;
+        border-color: #CED6DD;
+        height: 35px;
+        width: 110px;
+        padding: 0px 7px;
+        font-size: 11px;
+        border-radius: 3px !important;
+        background: #E1E7EC;
+      }
+    }
+
+    .search-type {
+      .search-type-content {
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 50%;
+          height: 100%;
+          width: 1px;
+          background: rgba(112, 112, 112, 0.25);
+        }
+
+        .search-type-content-column {
+          max-height: 260px;
+          overflow-y: scroll;
+          direction: ltr;
+          overflow-x: hidden;
+          @extend %contentScroll;
+        }
+      }
+
+      h3 {
+        font-size: 13px;
+        font-weight: bold;
+        color: #0089FE;
+        margin-bottom: 0;
+      }
+
+      .search-type-title {
+        font-size: 13px;
+        font-weight: bold;
+        padding: 5px;
+        color: #0089FE;
+        margin-bottom: 4px;
+        border-bottom: 1px solid rgba(112, 112, 112, 0.25);
+      }
+
+      .search-type-item {
+        margin-bottom:3px ;
+        font-size: 13px;
+
+        input[type=radio]:checked + label {
+          background: #0089FE;
+          color: white;
+        }
+
+        input[type=radio]:disabled + label {
+          opacity: 0.6;
+          background: #E1E7EC;
+          color: #000000;
+          cursor: no-drop;
+        }
+
+        label {
+          width: 165px;
+          height:28px;
+          border-radius: 3px;
+          padding: 5px;
+          background: #E1E7EC;
+          color: #000000;
+          cursor: pointer;
+          direction: rtl;
+          font: normal normal normal 10px/19px Droid Arabic Kufi;
+          span{
+            font: normal normal normal 10px/19px Droid Arabic Kufi;
+          }
+          .currency-amount{
+            font: normal normal normal 14px/16px Microsoft Sans Serif;
+          }
+
+        }
+      }
+    }
+    input[type="text"]{
+      border: 1px solid #70707040 !important;
+      width: 162px;
+      height: 28px;
+      font-size : 14px;
+    }
+    .filter-footer{
+      border-top:1px solid rgba(112, 112, 112, 0.25);
+      padding-top: 8px;
+      margin-top: 8px;
+      .btn-filter{
+        border-radius: 3px;
+        font-size: 12px;
+        padding:7px 14px;
+        width:100px;
+        border:0;
+      }
+      .btn-reset{
+        background: #fff;
+        color:#55616C;
+        padding:0;
+      }
+      .btn-apply{
+        background: #0089FE;
+        color:#FFFFFF
+      }
+    }
+  }
+}

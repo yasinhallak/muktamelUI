@@ -1,0 +1,81 @@
+#plansContainer{
+  //min-height: 48em;
+}
+.plans {
+    button{
+      border:none ;
+      outline: none ;
+    }
+  .no-result-section{
+    margin-top: 17px;
+  }
+
+  .second_navbar{
+    margin: 0 !important;
+  }
+
+  .form-control.custom-select{
+    width: 200px;
+  }
+  .search-input{
+    display: flex;
+    align-items: center;
+    i{position: absolute;left: 20px;color: #0089FE}
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 7px 14px;
+    width: 100px;
+  }
+
+  ._custom{
+    background: #0089fe;
+    height: 34px;
+    width: 72px;
+    font-size: 13px !important;
+    font-weight: bold !important;
+  }
+  .btn.btn-filter {
+    background: #fff !important;
+    color: #55616C !important;
+    border: 0;
+  }
+
+  .btn.btn-apply {
+    background: #0089FE !important;
+    color: #FFFFFF !important;
+  }
+
+  ::v-deep {
+    .__Land__Info div#Prop__Land__Info__Num, .Prop__Type div#Prop__Type {
+      border: 1px solid #aaa !important;
+      border-left: 0 solid #aaa !important;
+      span{
+        color:#495057 !important;
+      }
+      &.form-control,&.arrow-down .input-group-text{
+        border: 1px solid #aaa !important;
+        border-left: 0 solid #aaa !important;
+      }
+    }
+    .arrow-down .input-group-text{
+      border-color: #aaa !important;
+      i{
+        color: #aaa !important;
+      }
+    }
+  }
+}
+
+
+.spinner-layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  opacity: .6;
+  background-color: #FFF;
+}

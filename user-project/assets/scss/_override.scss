@@ -1,0 +1,82 @@
+@import "../shared-style/global-mixin/global-mixin";
+
+@mixin home-search-input-placeHolder($place-font-size) {
+  .filter-box, .rent-box-grid, #pills-contact {
+    input::placeholder {
+      font-size: $place-font-size;
+    }
+
+  }
+}
+
+//home section
+section.home {
+  @media only screen and (max-width: 360px) {
+    @include home-search-input-placeHolder(12px)
+  }
+  @media only screen and (min-width: 361px) {
+    @include home-search-input-placeHolder(12px)
+  }
+
+  /*responsive*/
+  //mobile 320 only
+  @media only screen and (max-width: 414px) {
+
+
+    .select-multi-columns .select-range-dropdown-menu {
+      left: 23px !important;
+      right: auto !important;
+      transform: translateX(calc(-50vw - 5px)) !important;
+
+      .filter-dropdown-menu-inner {
+        overflow: hidden;
+      }
+    }
+
+    .select-range .select-range-dropdown-menu {
+      left: auto !important;
+      right: -23px !important;
+      transform: translateX(calc(50vw + 5px)) !important;
+
+      .filter-dropdown-menu-inner {
+        overflow: hidden;
+      }
+    }
+
+    .select-range .select-range-dropdown-menu .filter-dropdown-menu-inner::before{
+      left: auto;
+      right: 70%;
+    }
+
+    .select-multi-columns .select-range-dropdown-menu .filter-dropdown-menu-inner::before{
+      left: auto;
+      right: 20%;
+    }
+
+  }
+  //end mobile 320 only
+
+  //tablet and up
+  @include md-up(){
+    .select-range-dropdown-menu{
+      right: 0;
+      left: auto;
+    }
+  }
+  //end tablet and up
+
+  /*end responsive*/
+}
+//end home section
+
+body{
+  &.modal-open{
+    padding-right: 0!important;
+  }
+
+  .login-modal{
+    overflow-y: hidden!important;
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+}

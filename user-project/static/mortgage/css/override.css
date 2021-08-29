@@ -1,0 +1,125 @@
+
+.steps  .step:not(:last-child) {
+  display: none;
+}
+
+.footer-field {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'AL Mateen';
+    font-style: normal;
+    padding: 20px;
+    z-index:99999
+}
+.select2 {
+    width: 40% !important;
+    height: 46px;
+    text-align:center
+}
+    .select2 .select2-selection {
+        height: 35px;
+        text-align:center
+    }
+
+/*#dpHijriBirthDate ,#dpGregorianBirthDate {
+
+    opacity:0 !important
+}*/
+.form-price {
+    position: relative;
+    width: 300px !important;
+    margin: auto;
+}
+.error-message-continner {
+    padding: 15px;
+    margin: 10px;
+}
+.input-price {
+    height: 48px !important;
+    font-size: 20px !important;
+    width: 100% !important;
+    padding-left: 25% !important;
+    background: #ffff !important;
+    padding: 10px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    font-family: 'New Times Roman';
+    font-size: 20pt;
+    resize: none;
+    color: #8f8f8f;
+}
+.input-center {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+.static-price {
+    left: 4px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #444;
+    top: 13px;
+    font-size: 18px;
+}
+
+.value-persent {
+    position: absolute;
+    /* font-weight: bold; */
+    font-size: 0.8em;
+    padding-right:4px;
+    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    color: #444;
+    border-right: 0px;
+    top: 0px;
+    right: 104%;
+    padding-right: 5px;
+    font-size: 18px;
+    padding: 11px 0 7px 0 ;
+}
+.select-2-width-80 {
+    width:90%
+}
+@media (max-width: 515px) {
+    .body-img-four {
+        width:120px;
+        height:120px
+    }
+
+    .select2 {
+        width:100%
+    }
+    .static-price {
+        left: 54px;
+
+    }
+    .value-persent {
+
+        right: 88%;
+
+    }
+    .input-price {
+
+        width: 67% !important;
+
+    }
+    .text-center-mobile {
+        text-align:center !important
+    }
+    .body-img-text {
+        height: 100px;
+        padding: initial !important;
+        width: 134px;
+    }
+    .body-img-text h1{
+        line-height: 3.5;
+    }
+    .select2 {
+        width: 81% !important;
+    }
+
+}

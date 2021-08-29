@@ -1,0 +1,137 @@
+.filter_box {
+  background-color: #e7ecf2 !important;
+  box-shadow: none !important;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  &.collapsed {
+    max-height: 75px;
+  }
+
+  .result-item-container {
+    .result-item {
+      padding: 5px 0 0 5px;
+      flex-shrink: 0;
+      input[type="checkbox"]:checked + label{
+        background: #0089fe !important;
+
+        .name {
+          color:#fff !important
+        }
+
+        .number {
+          color:#fff !important
+        }
+      }
+      .dist {
+        cursor: pointer;
+        display: block;
+        height: 30px;
+        width: 100%;
+        margin: 0 !important;
+        background: #fff !important;
+        border-radius: 17px;
+        text-decoration: none;
+        position: relative;
+        padding-right: 5px;
+
+        .name {
+          color: #0089FE;
+          font: normal normal bold 12px/22px 'Droid Arabic Kufi';
+        }
+
+        .number {
+          color: #55616C;
+          font: normal normal normal 12px/14px 'Microsoft Sans Serif';
+        }
+      }
+    }
+  }
+  .more-less {
+    background-color: #0089fe;
+    color: #fff;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 1rem;
+    bottom: 5px;
+  }
+}
+.level-one {
+
+  .filter_box {
+    max-height: 75px !important;
+  }
+
+  .level-one-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    &.result-item-container {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      padding: 0;
+      margin: 0;
+
+    }
+
+    .result-item {
+      width: auto !important;
+      margin-left: 20px;
+      margin-top: 5px;
+
+      .dist {
+        width: 100px;
+        height: 55px;
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 0;
+        line-height: 2;
+        justify-content: flex-start !important;
+
+        .name {
+          text-align: center;
+          font: normal normal bold 16px/31px 'Droid Arabic Kufi' !important;
+          letter-spacing: 0px;
+          color: #0089FE;
+        }
+
+        .number {
+          font: normal normal normal 16px/18px 'Microsoft Sans Serif' !important;;
+          letter-spacing: 0px;
+        }
+      }
+    }
+
+  }
+}
+.plan-filter-results {
+  background: #fff !important;
+  .filter_box{
+    background: #fff !important;
+    box-shadow: 0 -0.2rem 1rem 0.4rem rgba(0, 0, 0, 0.2) !important;
+    .result-item-container{
+      .result-item{
+        .dist{
+          background-color: #e9ecef !important;
+          font-weight: normal;
+          margin: 5px 0;
+          border-radius: 17px;
+          text-decoration: none;
+        }
+
+      }
+    }
+
+  }
+}
+
+
+
+

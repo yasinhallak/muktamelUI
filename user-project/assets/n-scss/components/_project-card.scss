@@ -1,0 +1,426 @@
+.project-card{
+  padding : 0 ;
+  width:100%;
+  background: #fff;
+  overflow: hidden;
+  transition: all ease 0.2s;
+  position: relative;
+  max-height: 240px;
+  border: 1px solid #7070704D;
+  border-radius: 1px;
+  &.active, &:hover{
+    box-shadow:0 0 5px #0089FE80,0 0 5px #0089FE80,0 0 5px #0089FE80
+  }
+  .card-header{
+    width: 360px;
+    .features {
+      background: rgba(0, 0, 0, 0.5);
+      bottom: 0;
+      right: 0;
+      color: #fff;
+      padding: 1px 7.5px 1px 0;
+      height: 22px;
+
+
+      li {
+        font: normal normal normal 16px/20px 'icomoon';
+        margin-left:10px;
+
+        //&:not(:last-child) {
+        //  margin-left: 2px;
+        //}
+
+        &.icon-deg360 {
+          width: 30px;
+          height: 20px;
+
+          img {
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+        &.icon-cube{
+          width: 20px;
+          height: 20px;
+        }
+
+
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+    .project-type{
+      position: absolute;
+      top:4px;
+      right:7px;
+      color: #FFFFFF;
+      font: normal normal bold 12px/22px 'Droid Arabic Kufi';
+      text-shadow: 0px 0px 4px #000000;
+    }
+  }
+  .card-body{
+    padding:0 !important;
+    position: relative;
+    >.inner-box{
+      padding: 9px 9px 0 0;
+      position: relative;
+      .title{
+        color: $color_blue;
+        font: normal normal bold 16px/31px Droid Arabic Kufi;
+        margin-bottom:4px;
+      }
+      .location{
+        font: normal normal normal 14px/27px 'Droid Arabic Kufi';
+        margin-bottom:4px;
+      }
+      .release-date{
+        color: #707070;
+        font: normal normal normal 14px/27px 'Droid Arabic Kufi';
+        margin-bottom:4px;
+        .date{
+          margin-right:5px;
+          color: $color_blue;
+          font: normal normal normal 14px/27px 'Droid Arabic Kufi';
+        }
+      }
+      .starting-price{
+        color: #707070;
+        font: normal normal normal 14px/27px 'Droid Arabic Kufi';
+        margin-bottom:7px;
+        .start-price-normal{
+
+        }
+        .start-price{
+          display:none
+        }
+        .price{
+          color:$color_red;
+          font: normal normal normal 18px/21px 'Microsoft Sans Serif';
+          margin-right:5px;
+          span{
+            font: normal normal normal 12px/22px 'Droid Arabic Kufi';
+          }
+        }
+      }
+      .project-types{
+        margin-bottom: 10px;
+        .project-types-item{
+          width: 110px;
+          height: 30px;
+          background: #DCE1E6 0% 0% no-repeat padding-box;
+          border-radius: 15px;
+          font: normal normal bold 10px/19px 'Droid Arabic Kufi';
+          color: #000000;
+          padding:0 5px;
+          &:not(:last-child){
+            margin-left:10px;
+          }
+          .count{
+            font: normal normal normal 10px/19px 'Droid Arabic Kufi';
+            color: #0089FE;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+  }
+  .card-footer{
+    background: #fff;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border: 0 ;
+
+    padding:6px;
+    .inner-box{
+      height: 54px;
+      padding-top:4px;
+      border-top: 1px solid rgba(112, 112, 112,  0.25);
+      .author{
+
+        &_title {
+          text-align: center;
+          border-left: 1px solid rgba(112, 112, 112,  0.25);
+          padding-left: 7px;
+          span{
+            color: #707070;
+            font: normal normal normal 12px/22px 'Droid Arabic Kufi';
+            width: 55px;
+
+          }
+
+        }
+        &_name{
+          h4{
+            font: normal normal normal 14px/23px 'Droid Arabic Kufi';
+            color: #0089FE;
+            margin:0;
+          }
+        }
+        &_logo{
+          flex-shrink: 0;
+          width: 75px;
+        }
+      }
+    }
+
+  }
+  &.agency-view{
+    .card-header {
+      width: 260px !important;
+    }
+    .card-footer{
+      display: none !important;
+    }
+  }
+  &.grid-view{
+    max-width:360px;
+    max-height: 417px ;
+    margin:0 auto;
+    flex-direction: column;
+    height: auto;
+    &.info-window{
+      width:240px;
+      height: 190px;
+      margin:0 !important;
+
+      .card-header{
+        .container-3-2{
+          padding-top:50% !important;
+        }
+        .features,.project-type{
+          display:none !important;
+        }
+        .author_logo{
+          display: none!important
+        }
+      }
+      .card-body{
+       > .inner-box{
+          padding:4px 5px 0 0 ;
+          .title{
+            font: normal normal bold 12px/22px 'Droid Arabic Kufi';
+          }
+          .release-date,.starting-price,.location{
+            display:none !important;
+          }
+        }
+        .project-types{
+          justify-content: center;
+          margin:0;
+          height: 21px;
+          margin-top:-4px;
+          > div{
+            padding: 0 !important;
+          }
+          .project-types-item{
+            background: none;
+            font-weight:900;
+            font-family: $font;
+            font-size: 12px;
+            margin:0;
+            padding:0;
+            justify-content: center !important;
+            &:not(:last-child)::after{
+              content: '-';
+              margin: 0 1px;
+            }
+            .count{
+              display:none;
+            }
+          }
+        }
+      }
+      .card-footer{
+        display:block;
+        height: 21px;
+        border:0;
+        position: static;
+        padding: 0;
+        .inner-box{
+          border:0;
+          padding:0;
+          font: normal normal normal 11px/21px 'Droid Arabic Kufi';
+        }
+        .author_logo,.author_title{
+          display:none !important;
+        }
+
+        a,.author_name , .author_name h4{
+
+          color:$color_black !important
+        }
+        .author_title{
+          justify-content: center;
+          padding-bottom: 11px;
+          flex-grow: 1;
+          width:100%;
+          text-align: center;
+          h4{
+            color:$color_black !important;
+          }
+
+        }
+      }
+    }
+    .card-header{
+      width:100% ;
+      .author_logo{
+        width:75px;
+        img{
+          padding:0 !important;
+          box-shadow: 0 0 5px #fff;
+        }
+      }
+      .project-type{
+        top:4px;
+        right:4px;
+      }
+    }
+    .card-body{
+      .inner-box{
+        padding: 5px 10px 0 0;
+      }
+    }
+    .project-types{
+      .project-types-item{
+        &:not(:last-child){
+          margin-left:5px !important;
+        }
+      }
+    }
+    .card-footer{
+      display:none
+    }
+
+  }
+  &.list-info-window-fixed{
+    width:100%;
+    height: 100px;
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: 900;
+    margin: 0 !important;
+    .card-header{
+      width: 145px;
+      flex-shrink: 0;
+      padding: 5px !important;
+      .features,.project-type{
+        display:none !important;
+      }
+      .author_logo{
+        display:none !important;
+      }
+    }
+    .card-body{
+      padding:3px 0 0 0 ;
+      .inner-box{
+        padding:3px 0 0 0 ;
+        display: flex;
+        flex-direction: column;
+
+        .release-date{
+          display: none !important;
+        }
+        .location{
+          display:none !important;
+        }
+        .title{
+          font: normal normal bold 12px/22px 'Droid Arabic Kufi';
+          order:1;
+          margin-bottom:2px;
+        }
+        .project-types{
+          order:2;
+          margin: 0 0 6px;
+          height: 21px;
+          font: normal normal bold 11px/21px 'Droid Arabic Kufi';
+          >div{
+            padding:0 !important;
+          }
+          .project-types-item{
+            background: none;
+            font: normal normal bold 11px/21px 'Droid Arabic Kufi';
+            margin:0;
+            padding:0;
+            &:not(:last-child)::after{
+              content: '-';
+              margin: 0 1px;
+            }
+            .count{
+              display:none;
+            }
+          }
+        }
+        .starting-price{
+          order:3;
+          font-size: 12px;
+          margin-bottom: 0;
+          .start-price-normal{
+            display:none !important;
+          }
+          .start-price{
+            display:block !important;
+            font: normal normal normal 10px/19px 'Droid Arabic Kufi';
+          }
+          .price{
+            font: normal normal normal 14px/16px 'Microsoft Sans Serif';
+            span{
+              font: normal normal normal 10px/19px 'Droid Arabic Kufi';
+            }
+          }
+        }
+
+      }
+      .card-footer{
+        display:block;
+        height: 21px;
+        margin: 0;
+        padding: 0;
+        position: static;
+        .inner-box{
+          border: 0 !important;
+          margin: 0;
+          padding: 0;
+          height: 100%;
+        }
+        .author{
+          justify-content: flex-start !important;
+        }
+        .author_logo,.author_title span{
+          display:none !important;
+        }
+        a{
+          color:$color_black
+        }
+        .author_title{
+          display:none !important;
+        }
+        .author_name{
+          font-size: 10px !important;
+          padding: 0;
+          flex-grow: 1;
+          width:100%;
+          h4{
+            font: normal normal normal 11px/21px Droid Arabic Kufi;
+            letter-spacing: 0px;
+            color: #000000;
+            text-align: right;
+
+          }
+
+        }
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,183 @@
+.basic-modal {
+  @extend %center;
+  .modal-content {
+    max-width: 400px;
+    .project-details {
+      .title {
+        @extend .font-size-16px;
+        @extend .main-font;
+        @extend %ellipsis;
+        color: $color_dark;
+      }
+      .img-container {
+        position: relative;
+        overflow: hidden;
+        min-height: 150px;
+        max-height: 150px;
+        min-width: 225px;
+        max-width: 225px;
+        width: 100%;
+        .overlays {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          .upperlayer {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            .det {
+              position: absolute;
+              color: $color_white;
+              font-size: 17px;
+              &.img-kind {
+                bottom: 0px;
+                left: 0px;
+                max-width: 60px;
+                max-height: 40px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .details {
+        .project-title {
+          @extend .font-size-16px;
+          @extend .main-font;
+          @extend %ellipsis;
+          color: $color_primary;
+          font-weight: bold;
+        }
+        .location {
+          @extend %center;
+          @extend %ellipsis;
+          color: $color_dark;
+        }
+        .special {
+          @extend %center;
+          @extend %ellipsis;
+          color: #9c9c9c;
+        }
+      }
+    }
+    .form-control {
+      @extend .font-size-12px;
+      @extend .main-font;
+      border: 1px solid rgb(169, 169, 169);
+      border-radius: 3px !important;
+      color: $color_dark;
+      line-height: 1.75;
+      padding: 0 0.75rem;
+    }
+    textarea.area {
+      @extend .font-size-12px;
+      @extend .main-font;
+      color: $color_dark;
+      line-height: 1.75;
+      height: 98px;
+      width: 100%;
+      border-radius: 3px;
+      padding: 0.375rem 0.75rem;
+      &:focus {
+        outline: -webkit-focus-ring-color auto 0px;
+      }
+    }
+    .iti-flag {
+      box-shadow: 0px 0px 0px 0px #888;
+    }
+    .footer {
+      border-top: 0;
+      padding-top: 0;
+      .btn {
+        border-radius: .2rem !important;
+      }
+    }
+  }
+}
+
+.modalShare {
+  .price {
+    color: $color_dngr;
+  }
+  ul.icons {
+    @extend %center;
+    li {
+      margin-left: 3px;
+    }
+  }
+}
+
+.modalCompany {
+  .details {
+    p {
+      @extend %ellipsis;
+      margin: 0;
+    }
+    p.project-title {
+      color: $color_dark;
+      font-weight: $bold;
+    }
+    p.main-office {
+      color: $color_primary;
+    }
+    ul.location {
+      @extend %ellipsis;
+      @extend .font-size-12px;
+      li{
+        color: $color_primary;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.modalproblem {
+  .price {
+    color: $color_dngr;
+  }
+  ul.icons {
+    @extend %center;
+    // justify-content: flex-start;
+    li {
+      margin-left: 3px;
+    }
+  }
+  select {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  area {
+    margin-bottom: 3px;
+  }
+}
+
+.modalRealEstate {
+  .price {
+    color: $color_dngr;
+  }
+  ul.icons {
+    @extend %center;
+    // justify-content: flex-start;
+    li {
+      margin-left: 3px;
+    }
+  }
+}
+
+
+::placeholder {
+  text-align: right;
+}
+
+input[type=email],
+input[type=tel]{
+  text-align: left;
+}

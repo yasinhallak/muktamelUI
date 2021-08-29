@@ -1,0 +1,124 @@
+.contact-page {
+  background: #fff;
+
+  a {
+    color: #0089FE;
+  }
+
+  .telephone-form {
+    border: 1px solid #70707080 !important;
+    height: 38px !important;
+  }
+
+  ::v-deep .form-group {
+    margin-bottom: 20px;
+
+    label {
+      color: #001324 !important;
+      margin-bottom: 5px !important;
+      font-size: 16px;
+    }
+
+    input {
+      border: 1px solid #70707080 !important;
+      max-height: none !important;
+      height: 38px !important;
+    }
+
+    textarea.form-control {
+      height: auto !important;
+      max-height: none !important;
+      border: 1px solid #70707080 !important;
+    }
+  }
+
+  button {
+    width: 100px;
+    height: 35px;
+    background: #0089FE;
+    border-radius: 5px;
+    font: normal normal bold 16px/31px Droid Arabic Kufi;
+    color: #FFFFFF;
+    border: none;
+    box-shadow: none;
+  }
+
+  .page-title {
+    color: #0089FE;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .page-subtitle {
+    color: #001324;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 38px;
+  }
+
+  .contact-now {
+    padding: 0 10px;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      border-top: 1px solid rgba(112, 112, 112, 0.30);
+      padding-top: 15px;
+    }
+
+    li {
+      &:first-child {
+        margin-bottom: 11px;
+
+        a {
+          font-size: 22px;
+          font-weight: bold;
+        }
+      }
+
+      a {
+        font-size: 18px;
+
+      }
+
+      i {
+        font-size: 24px;
+        margin-left: 10px;
+      }
+    }
+
+  }
+
+  .follow-us {
+    padding: 0 10px;
+    border-top: 1px solid rgba(112, 112, 112, 0.30);
+    border-bottom: 1px solid rgba(112, 112, 112, 0.30);
+    font-size: 16px;
+    font-weight: bold;
+    color: #0089FE;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    li {
+      margin-left: 10px;
+
+      &:first-child {
+        margin-right: 26px;
+      }
+
+      a {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .border-left-md {
+    @media(min-width: 769px) {
+      border-left: 1px solid rgba(112, 112, 112, 0.3)
+    }
+
+  }
+  .contact-form{
+    margin-left:-10px;
+    margin-right:-10px
+  }
+}
